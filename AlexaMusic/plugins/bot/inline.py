@@ -55,13 +55,13 @@ async def inline_query_handler(client, query):
                 ]
             )
             searched_text = f"""
-📌**ᴛɪᴛʟᴇ:** [{title}]({link})
+📌**Başlık:** [{title}]({link})
 
-⏳**ᴅᴜʀᴀᴛɪᴏɴ:** {duration} Mins
-👀**ᴠɪᴇᴡs:** `{views}`
-⏰**ᴩᴜʙʟɪsʜᴇᴅ ᴏɴ:** {published}
-🎥**ᴄʜᴀɴɴᴇʟ:** {channel}
-📎**ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [ᴠɪsɪᴛ ᴄʜᴀɴɴᴇʟ]({channellink})
+⏳**Süre:** {duration} Mins
+👀**Görüntüleme:** `{views}`
+⏰**Yayınlanma Tarihi:** {published}
+🎥**kanal:** {channel}
+📎**Kanal Linki:** [ᴠɪsɪᴛ ᴄʜᴀɴɴᴇʟ]({channellink})
 
 💖 ** sᴇᴀʀᴄʜ ᴩᴏᴡᴇʀᴇᴅ ʙʏ {MUSIC_BOT_NAME} **"""
             answers.append(
