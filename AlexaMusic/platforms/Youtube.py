@@ -337,13 +337,13 @@ class YouTubeAPI:
             formats = f"{format_id}+140"
             fpath = f"downloads/{title}"
             ydl_optssx = {
+                "cookiefile": cookiefile(),
                 "format": formats,
                 "outtmpl": fpath,
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
-                "cookiefile": cookiefile(),
                 "prefer_ffmpeg": True,
                 "merge_output_format": "mp4",
             }
@@ -353,13 +353,13 @@ class YouTubeAPI:
         def song_audio_dl():
             fpath = f"downloads/{title}.%(ext)s"
             ydl_optssx = {
+                "cookiefile": cookiefile(),
                 "format": format_id,
                 "outtmpl": fpath,
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
-                "cookiefile": cookiefile(),
                 "prefer_ffmpeg": True,
                 "postprocessors": [
                     {
