@@ -29,7 +29,7 @@ class AlexaBot(Client):
             max_concurrent_transmissions=6,
             workers=48,
         )
-        LOGGER(__name__).info(f"Starting Bot...")
+        LOGGER(__name__).info(f"Bot Başlatılıyor...")
 
     async def start(self):
         await super().start()
@@ -39,16 +39,16 @@ class AlexaBot(Client):
         self.mention = get_me.mention
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "» ᴍᴜsɪᴄ ʙᴏᴛ sᴛᴀʀᴛᴇᴅ, ᴡᴀɪᴛɪɴɢ ғᴏʀ ᴀssɪsᴛᴀɴᴛ..."
+                config.LOG_GROUP_ID, "» Music bot başlatıldı, asistan bekleniyor..."
             )
         except:
             LOGGER(__name__).error(
-                "Bot has failed to access the log Group. Make sure that you have added your bot to your log channel and promoted as admin!"
+                "Bot, log Grubuna erişemedi. Botu log kanalınıza eklediğinizden ve yönetici olarak terfi ettirdiğinizden emin olun.!"
             )
             sys.exit()
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != ChatMemberStatus.ADMINISTRATOR:
-            LOGGER(__name__).error("Please promote Bot as Admin in Logger Group")
+            LOGGER(__name__).error("Lütfen Botu Logger Grubunda Yönetici Olarak Terfi Ettir")
             sys.exit()
         if get_me.last_name:
             self.name = get_me.first_name + " " + get_me.last_name
