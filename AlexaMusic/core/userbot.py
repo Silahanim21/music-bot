@@ -61,7 +61,7 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER(__name__).info(f"Starting Assistant Clients...")
+        LOGGER(__name__).info(f"Asistan istemcileri başlatılıyor...")
         if config.STRING1:
             await self.one.start()
             try:
@@ -74,11 +74,11 @@ class Userbot(Client):
             try:
                 await self.one.send_message(
                     config.LOG_GROUP_ID,
-                    "ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ, ɴᴏᴡ ɪᴛ's ᴛɪᴍᴇ ᴛᴏ ᴇɴᴊᴏʏ ᴍᴜsɪᴄ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴠɪᴅᴇᴏᴄʜᴀᴛs.",
+                    "Asistan başlatıldı, şimdi Telegram video sohbetlerinde müziğin keyfini çıkarma zamanı.",
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 1 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin ! "
+                    f"Asistan Hesabı 1, kayıt grubuna erişemedi. Asistanı kayıt grubunuza eklediğinizden ve yönetici olarak terfi ettirdiğinizden emin olun ! "
                 )
                 sys.exit()
             get_me = await self.one.get_me()
@@ -89,7 +89,7 @@ class Userbot(Client):
                 self.one.name = get_me.first_name + " " + get_me.last_name
             else:
                 self.one.name = get_me.first_name
-            LOGGER(__name__).info(f"Assistant Started as {self.one.name}")
+            LOGGER(__name__).info(f"Asistan şu rol ile başlatıldı {self.one.name}")
         if config.STRING2:
             await self.two.start()
             try:
@@ -102,11 +102,11 @@ class Userbot(Client):
             try:
                 await self.two.send_message(
                     config.LOG_GROUP_ID,
-                    "ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ, ɴᴏᴡ ɪᴛ's ᴛɪᴍᴇ ᴛᴏ ᴇɴᴊᴏʏ ᴍᴜsɪᴄ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴠɪᴅᴇᴏᴄʜᴀᴛs.",
+                    "Asistan başlatıldı, şimdi Telegram video sohbetlerinde müziğin keyfini çıkarma zamanı.",
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 2 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin ! "
+                    f"Asistan başlatıldı, şimdi Telegram video sohbetlerinde müziğin keyfini çıkarma zamanı ! "
                 )
                 sys.exit()
             get_me = await self.two.get_me()
@@ -117,24 +117,24 @@ class Userbot(Client):
                 self.two.name = get_me.first_name + " " + get_me.last_name
             else:
                 self.two.name = get_me.first_name
-            LOGGER(__name__).info(f"Assistant Two Started as {self.two.name}")
+            LOGGER(__name__).info(f"Asistan İki Başlatıldı {self.two.name}")
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("Alexa_Help")
-                await self.three.join_chat("TheTeamAlexa")
-                await self.three.join_chat("Alexa_BotUpdates")
+                await self.three.join_chat("sorundestekk")
+                await self.three.join_chat("loggrrp")
+                await self.three.join_chat("sohbet_siir")
             except:
                 pass
             assistants.append(3)
             try:
                 await self.three.send_message(
                     config.LOG_GROUP_ID,
-                    "ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ, ɴᴏᴡ ɪᴛ's ᴛɪᴍᴇ ᴛᴏ ᴇɴᴊᴏʏ ᴍᴜsɪᴄ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴠɪᴅᴇᴏᴄʜᴀᴛs.",
+                    "Asistan başlatıldı, şimdi Telegram video sohbetlerinde müziğin keyfini çıkarma zamanı.",
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 3 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin ! "
+                    f"Asistan Hesabı 3, kayıt grubuna erişemedi. Asistanı kayıt grubunuza eklediğinizden ve yönetici olarak terfi ettirdiğinizden emin olun ! "
                 )
                 sys.exit()
             get_me = await self.three.get_me()
