@@ -29,4 +29,4 @@ def dirr():
     if "cache" not in os.listdir():
         os.mkdir("cache")
 
-    LOGGER(__name__).info("Directories Updated.")
+    LOGGER(__name__).info("Dizinler güncellendi.")
