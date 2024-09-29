@@ -57,7 +57,7 @@ async def play_commnd(
 ):
     if not await is_served_user(message.from_user.id):
         await message.reply_text(
-            text="😢 ᴅᴇᴀʀ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀ ᴠᴇʀɪғɪᴇᴅ ᴀᴛ ᴀʟᴇxᴀ ᴅᴀᴛᴀʙᴀsᴇ.\n☔ ᴘʟᴇᴀsᴇ ᴜsᴇ /verify ᴛᴏ ᴠᴇʀɪғʏ ʏᴏᴜʀsᴇʟғ ᴀᴛ ᴀʟᴇxᴀ ᴅᴀᴛᴀʙᴀsᴇ.",
+            text="😢 Sevgili kullanıcı, siz Esila veritabanında doğrulanmış bir üye değildi.\n☔ Lütfen kendinizi Alexa veritabanında çalıştırmak için /verify tipini kullanın.",
         )
         return
     mystic = await message.reply_text(
@@ -199,7 +199,7 @@ async def play_commnd(
             spotify = True
             if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
                 return await mystic.edit_text(
-                    "ᴛʜɪs ʙᴏᴛ ᴄᴀɴ'ᴛ ᴩʟᴀʏ sᴩᴏᴛɪғʏ ᴛʀᴀᴄᴋs ᴀɴᴅ ᴩʟᴀʏʟɪsᴛs, ᴩʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴏᴡɴᴇʀ ᴀɴᴅ ᴀsᴋ ʜɪᴍ ᴛᴏ ᴀᴅᴅ sᴩᴏᴛɪғʏ ᴩʟᴀʏᴇʀ."
+                    "Bu bot, Spotify içeriklerini ve çalma listelerini çalamaz. Lütfen sahibimle iletişime geçin ve ondan Spotify oynatıcı eklemesini isteyin."
                 )
             if "track" in url:
                 try:
@@ -302,11 +302,11 @@ async def play_commnd(
                 await Alexa.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(
-                    "ᴛʜᴇʀᴇ's ᴀɴ ᴇʀʀᴏʀ ɪɴ ᴛʜᴇ ʙᴏᴛ, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴛᴏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ ᴀs sᴏᴏɴ ᴀs ᴩᴏssɪʙʟᴇ."
+                    "Botta bir hata var, lütfen bunu destek sohbetine mümkün olan en kısa sürede bildirin."
                 )
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    "ᴩʟᴇᴀsᴇ ᴛᴜʀɴ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴛᴏ sᴛʀᴇᴀᴍ ᴜʀʟ.",
+                    "Lütfen URL'yi açmak için videoda video sohbetini etkinleştirmek üzere açın.",
                 )
             except Exception as e:
                 return await mystic.edit_text(_["general_3"].format(type(e).__name__))
@@ -521,7 +521,7 @@ async def play_music(client, CallbackQuery, _):
 async def anonymous_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
-            "ʏᴏᴜ'ʀᴇ ᴀɴ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ\n\nʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜsᴇʀ ᴀᴄᴄᴏᴜɴᴛ ғᴏʀ ᴜsɪɴɢ ᴍᴇ.",
+            "Siz anonim bir yöneticisiniz\n\nBeni kullanmak için kullanıcı hesabına geri dön.",
             show_alert=True,
         )
     except:
