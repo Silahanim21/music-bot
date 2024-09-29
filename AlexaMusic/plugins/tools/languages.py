@@ -111,7 +111,7 @@ async def language_markup(client, CallbackQuery, _):
         )
     except:
         return await CallbackQuery.answer(
-            "ғᴀɪʟᴇᴅ ᴛᴏ ᴄʜᴀɴɢᴇ ʟᴀɴɢᴜᴀɢᴇ ᴏʀ ᴛʜᴇ ʟᴀɴɢᴜᴀɢᴇ ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ.",
+            "Dil değiştirilemedi veya dil bakımda.",
             show_alert=True,
         )
     await set_lang(CallbackQuery.message.chat.id, langauge)
