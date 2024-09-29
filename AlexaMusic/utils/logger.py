@@ -20,24 +20,24 @@ async def play_logs(message, streamtype):
         if message.chat.username:
             chatusername = f"@{message.chat.username}"
         else:
-            chatusername = "ᴩʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ"
+            chatusername = "Özel Sohbet"
         logger_text = f"""
 **━━━━━━━━━━━━━━━**
-**💞 {MUSIC_BOT_NAME} ᴍᴜsɪᴄ ʟᴏɢs **
+**💞 {MUSIC_BOT_NAME} music logs **
 **━━━━━━━━━━━━━━━**
-**🌹️ 𝐂𝐡𝐚𝐭 𝐍𝐚𝐌𝐞 : >** {message.chat.title} [`{message.chat.id}`]
+**🌹️ Sohbet Adı : >** {message.chat.title} [`{message.chat.id}`]
 **━━━━━━━━━━━━━━━**
-**🥀 𝐍𝐚𝐌𝐞 : ›** {message.from_user.mention}
+**🥀 İsim : ›** {message.from_user.mention}
 **━━━━━━━━━━━━━━━**
-**🌸 𝐔𝐬𝐞𝐑𝐧𝐚𝐌𝐞 : ›** @{message.from_user.username}
+**🌸 Kullanıcı Adı : ›** @{message.from_user.username}
 **━━━━━━━━━━━━━━━**
 **🌷 𝐈𝐃  : ›** `{message.from_user.id}`
 **━━━━━━━━━━━━━━━**
-**🌿 𝐂𝐡𝐚𝐭 𝐥𝐢𝐧𝐤: >** {chatusername}
+**🌿 Sohbet Bağlantısı: >** {chatusername}
 **━━━━━━━━━━━━━━━**
-**🌻 𝐒𝐞𝐀𝐫𝐜𝐇𝐞𝐝 𝐅𝐨𝐫:** {message.text}
+**🌻 Aranan:** {message.text}
 **━━━━━━━━━━━━━━━**
-**💐 𝐒𝐭𝐫𝐄𝐚𝐦 𝐓𝐲𝐏𝐞:** {streamtype}
+**💐 akış türü:** {streamtype}
 **━━━━━━━━━━━━━━━**"""
         if message.chat.id != LOG_GROUP_ID:
             try:
