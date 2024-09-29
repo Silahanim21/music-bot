@@ -112,7 +112,7 @@ async def gstats_global(client, message: Message, _):
         vidid,
     ) = await YouTube.details(videoid, True)
     title = title.title()
-    final = f"Top Most Played Track on {MUSIC_BOT_NAME}\n\n**Title:** {title}\n\nPlayed** {co} **times"
+    final = f"Üzerindeki En Çok Çalınan Parça {MUSIC_BOT_NAME}\n\n**Başlık:** {title}\n\n**{co}** kez çalındı."
     upl = get_stats_markup(_, True if message.from_user.id in SUDOERS else False)
     await app.send_photo(
         message.chat.id,
@@ -178,9 +178,9 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
                 details = stats.get(items)
                 title = (details["title"][:35]).title()
                 if items == "telegram":
-                    msg += f"🌹 [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/Shayri_Music_Lovers) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                    msg += f"🌹 [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/sohbet_siir) ** Oynatıldı {count} Kez**\n\n"
                 else:
-                    msg += f"🌹 [{title}](https://www.youtube.com/watch?v={items}) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                    msg += f"🌹 [{title}](https://www.youtube.com/watch?v={items}) ** oynatıldı {count} kez**\n\n"
 
             temp = (
                 _["gstats_4"].format(
@@ -218,7 +218,7 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
             except:
                 continue
             limit += 1
-            msg += f"💖 `{extract}` ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs ᴏɴ ʙᴏᴛ.\n\n"
+            msg += f"💖 `{extract}` Oynatıldı {count} Botun çalışma saatleri.\n\n"
         temp = (
             _["gstats_5"].format(limit, MUSIC_BOT_NAME)
             if what == "Chats"
@@ -266,21 +266,21 @@ async def overall_stats(client, CallbackQuery, _):
     cm = config.CLEANMODE_DELETE_MINS
     text = f"""🌹 **ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏ:**
 
-🌹 **ᴍᴏᴅᴜʟᴇs:** {mod}
-🌹 **ᴄʜᴀᴛs:** {served_chats} 
-🌹 **ᴜsᴇʀs:** {served_users} 
-🌹 **ʙʟᴏᴄᴋᴇᴅ:** {blocked} 
-🌹 **sᴜᴅᴏᴇʀs:** {sudoers} 
+🌹 **Modüller:** {mod}
+🌹 **Sohbetler:** {served_chats} 
+🌹 **Kullanıcılar:** {served_users} 
+🌹 **Engellenenler:** {blocked} 
+🌹 **Sudo Yetkilileri:** {sudoers} 
     
-🌹 **ǫᴜᴇʀɪᴇs:** {total_queries} 
-🌹 **ᴀssɪsᴛᴀɴᴛs:** {assistant}
-🌹 **ᴀss ᴀᴜᴛᴏ ʟᴇᴀᴠᴇ:** {ass}
-🌹 **ᴄʟᴇᴀɴᴍᴏᴅᴇ:** {cm} ᴍɪɴᴜᴛᴇs
+🌹 **Sorgular:** {total_queries} 
+🌹 **Asistanlar:** {assistant}
+🌹 **Asistan Otomatik Çıkışı:** {ass}
+🌹 **Temiz Mod:** {cm} ᴍɪɴᴜᴛᴇs
 
-🌹 **ᴅᴜʀᴀᴛɪᴏɴ ʟɪᴍɪᴛ:** {play_duration} ᴍɪɴᴜᴛᴇs
-🌹 **ᴅᴏᴡɴʟᴏᴀᴅ ʟɪᴍɪᴛ:** {song} ᴍɪɴᴜᴛᴇs
-🌹 **ᴩʟᴀʏʟɪsᴛ ʟɪᴍɪᴛ:** {playlist_limit}
-🌹 **ᴩʟᴀʏʟɪsᴛ ᴩʟᴀʏ ʟɪᴍɪᴛ:** {fetch_playlist}"""
+🌹 **Oynatma Süresi Sınırı:** {play_duration} ᴍɪɴᴜᴛᴇs
+🌹 **Çalma Listesi Sınırı:** {song} ᴍɪɴᴜᴛᴇs
+🌹 **Çalma Listesi Sınırı:** {playlist_limit}
+🌹 **Çalma Listesi Oynatma Sınırı:** {fetch_playlist}"""
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
@@ -337,38 +337,38 @@ async def overall_stats(client, CallbackQuery, _):
     total_queries = await get_queries()
     blocked = len(BANNED_USERS)
     sudoers = len(await get_sudoers())
-    text = f"""🌹 **ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏ:**
+    text = f"""🌹 **Bot'un İstatistikleri ve Bilgileri:**
 
        <b><u>🌹 ʜᴀʀᴅᴡᴀʀᴇ</b><u/>
-🌹 **ᴍᴏᴅᴜʟᴇs:** {mod}
+🌹 **ᴍodüller:** {mod}
 🌹 **ᴩʟᴀᴛғᴏʀᴍ:** {sc}
 🌹 **ʀᴀᴍ:** {ram}
-🌹 **ᴩʜʏsɪᴄᴀʟ ᴄᴏʀᴇs:** {p_core}
-🌹 **ᴛᴏᴛᴀʟ ᴄᴏʀᴇs:** {t_core}
-🌹 **ᴄᴩᴜ ғʀᴇǫᴜᴇɴᴄʏ:** {cpu_freq}
+🌹 **Fiziksel Çekirdekler:** {p_core}
+🌹 **Toplam Çekirdekler:** {t_core}
+🌹 **CPU Frekansı:** {cpu_freq}
 
-       <b><u>🌹 sᴏғᴛᴡᴀʀᴇ</b><u/>
+       <b><u>🌹 Yazılım Bilgileri</b><u/>
 🌹 **ᴩʏᴛʜᴏɴ :** {pyver.split()[0]}
 🌹 **ᴩʏʀᴏɢʀᴀᴍ :** {pyrover}
 🌹 **ᴩʏ-ᴛɢᴄᴀʟʟs :** {pytgver}
 
-        <b><u>🌹 sᴛᴏʀᴀɢᴇ</b><u/>
-🌹 **ᴀᴠᴀɪʟᴀʙʟᴇ:** {total[:4]} GiB
-🌹 **ᴜsᴇᴅ:** {used[:4]} GiB
-🌹 **ғʀᴇᴇ:** {free[:4]} GiB
+        <b><u>🌹 Depolama Bilgileri</b><u/>
+🌹 **Mevcut Alan:** {total[:4]} GiB
+🌹 **Kullanılan Alan:** {used[:4]} GiB
+🌹 **Boş Alan:** {free[:4]} GiB
 
       <b><u>🌹 ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛs</b><u/>
-🌹 **ᴄʜᴀᴛs:** {served_chats} 
-🌹 **ᴜsᴇʀs:** {served_users} 
-🌹 **ʙʟᴏᴄᴋᴇᴅ:** {blocked} 
-🌹 **sᴜᴅᴏᴇʀs:** {sudoers} 
+🌹 **Sohbetler:** {served_chats} 
+🌹 **Kullanıcılar:** {served_users} 
+🌹 **Engellenenler:** {blocked} 
+🌹 **bot yöneticileri:** {sudoers} 
 
-      <b><u>🌹 ᴍᴏɴɢᴏ ᴅᴀᴛᴀʙᴀsᴇ</b><u/>
-🌹 **sɪᴢᴇ:** {datasize[:6]} ᴍʙ
-🌹 **sᴛᴏʀᴀɢᴇ:** {storage} ᴍʙ
-🌹 **ᴄᴏʟʟᴇᴄᴛɪᴏɴs:** {collections}
-🌹 **ᴋᴇʏs:** {objects}
-🌹 **ʙᴏᴛ ǫᴜᴇʀɪᴇs:** `{total_queries}`
+      <b><u>🌹 ᴍᴏɴɢᴏ Veritabanı</b><u/>
+🌹 **Boyut:** {datasize[:6]} ᴍʙ
+🌹 **Depolama:** {storage} ᴍʙ
+🌹 **Koleksiyonlar:** {collections}
+🌹 **Anahtarlar:** {objects}
+🌹 **ʙᴏᴛ Sorguları:** `{total_queries}`
     """
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
