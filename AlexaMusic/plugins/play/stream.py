@@ -51,7 +51,7 @@ async def stream_command(
             )
             return await app.send_message(
                 config.LOG_GROUP_ID,
-                "ᴘʟᴇᴀsᴇ ᴛᴜʀɴ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.. ʙᴏᴛ ɪs ɴᴏᴛ ᴀʙʟᴇ ᴛᴏ sᴛʀᴇᴀᴍ ᴜʀʟs..",
+                "Botta bir sorun var. Lütfen bunu sahibine rapor edin ve yetiştirilen log gruplarını kontrol etmelerini isteyin..",
             )
         except Exception as e:
             return await mystic.edit_text(_["general_3"].format(type(e).__name__))
