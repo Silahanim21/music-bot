@@ -73,7 +73,7 @@ HELP_4 = """😴<u>**Ekstra Komutlar:**</u>
 /settings : Grubun ayarlarını etkileşimli çevrimiçi menü ile gösterir.
 Powered by @esilabotbilgilendirme, @sorundestekk @sohbet_siir.
 
-HELP_5 = """🥺**<u>ᴀᴅᴅ & ʀᴇᴍᴏᴠᴇ sᴜᴅᴏᴇʀs:</u>**
+HELP_5 = <u>ᴀᴅᴅ & ʀᴇᴍᴏᴠᴇ sᴜᴅᴏᴇʀs:</u>**
 /addsudo [kullanıcı adı veya bir kullanıcıya yanıt ver]
 /delsudo [kullanıcı adı veya bir kullanıcıya yanıt ver]
 
