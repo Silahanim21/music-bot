@@ -53,7 +53,7 @@ Zorla oynatma komutları:playforce, vplayforce, cplayforce: Şarkıyı zorla oyn
 Powered © by @esilabotbilgilendirme, @sorundestekk @sohbet_siir"""
 
 
-HELP_3 = 😉<u>BOT KOMUTLARI:</u>
+HELP_3 = """😉<u>BOT KOMUTLARI:</u>
 
 /stats : En iyi 10 parça global istatistiklerini, botun en iyi 10 kullanıcısını, bot üzerindeki en iyi 10 sohbeti, sohbet içinde en çok çalınan 10 parçayı ve daha fazlasını alır.
 /sudolist : Müzik botunun süper kullanıcı listesini gösterir.
@@ -73,7 +73,7 @@ HELP_4 = """😴<u>**Ekstra Komutlar:**</u>
 /settings : Grubun ayarlarını etkileşimli çevrimiçi menü ile gösterir.
 Powered by @esilabotbilgilendirme, @sorundestekk @sohbet_siir.
 
-HELP_5 = 🥺<u>SUDO KULLANICILARINI EKLEME VE KALDIRMA:</u>
+HELP_5 = """🥺<u>SUDO KULLANICILARINI EKLEME VE KALDIRMA:</u>
 /addsudo [kullanıcı adı veya bir kullanıcıya yanıt ver]
 /delsudo [kullanıcı adı veya bir kullanıcıya yanıt ver]
 
