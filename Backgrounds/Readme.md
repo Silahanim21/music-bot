@@ -6,7 +6,7 @@ Finally, on March 7th, [@TheTeamAlexa](https://github.com/TheTeamAlexa) made ran
 # ❤️ Support<
 <a href="https://t.me/esilabotbilgilendirme"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 <a href="[https://t.me/](https://t.me/sohbet_siir)"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
-<a href="[https://t.me/Give_Me_Heart](https://t.me/sorundestekk)"><img src="https://img.shields.io/badge/Give-Me%20Heart-blue.svg?logo=telegram"></a>
+<a href="[https://t.me/sorundestekkt](https://t.me/sorundestekk)"><img src="https://img.shields.io/badge/Give-Me%20Heart-blue.svg?logo=telegram"></a>
 <a href="https://t.me/"><img src="https://img.shields.io/badge/Give-Me%20Heart-blue.svg?logo=telegram"></a>
 
 </details>
