@@ -16,7 +16,7 @@ Sadece komutların başına "c" ekleyin, kanalda kullanmak için.
 🥴<u>**oynatılan parçanın tekrarlanması :**</u>
 
 /loop [devre dışı bırak/etkinleştir] veya [1:10 arasında]
-: Etkinleştirildiğinde, bot mevcut oynatılan akışı döngüye alır ve 10 kez veya istenilen döngü sayısı kadar tekrar çalar.
+    : Etkinleştirildiğinde, bot mevcut oynatılan akışı döngüye alır ve 10 kez veya istenilen döngü sayısı kadar tekrar çalar.
 
 😜<u>**Yetkili Kullanıcılar :**</u>
 
@@ -73,7 +73,7 @@ HELP_4 = """😴<u>**Ekstra Komutlar:**</u>
 /settings : Grubun ayarlarını etkileşimli çevrimiçi menü ile gösterir.
 Powered by @esilabotbilgilendirme, @sorundestekk @sohbet_siir.
 
-HELP_5 = """🥺**<u>SUDO KULLANICILARINI EKLEME VE KALDIRMA:</u>**
+HELP_5 = """🥺**<u>Ekle & Kaldır Sudo Kullanıcıları:</u>**
 /addsudo [kullanıcı adı veya bir kullanıcıya yanıt ver]
 /delsudo [kullanıcı adı veya bir kullanıcıya yanıt ver]
 
