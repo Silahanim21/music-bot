@@ -10,10 +10,10 @@ motor
 ntgcalls
 pillow==9.5.0
 psutil
-py-tgcalls==2.0.3
+py-tgcalls
 pykeyboard
 pymongo
-git+https://github.com/KurimuzonAkuma/pyrogram@1fea868427a9addd7ad27c9f1f15c71f0b7f32c8
+git+https://github.com/KurimuzonAkuma/pyrogram@dev
 python-dotenv
 PyYAML
 requests
@@ -21,8 +21,8 @@ speedtest-cli
 spotipy
 tgcrypto
 yt-dlp
-git+https://github.com/KSKOP69/youtube-search-python@main
-git+https://github.com/joetats/youtube_search@master
+youtube-search
+youtube-search-python
 numpy
 flask
-gunicorn==20.1.0
+gunicorn
