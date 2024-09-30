@@ -17,10 +17,11 @@ from typing import Union
 from pyrogram import Client
 from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardMarkup
+
 from pytgcalls import PyTgCalls
 from pytgcalls import filters as fl
 from ntgcalls import TelegramServerError
-from pytgcalls.exceptions import AlreadyJoinedError, NoActiveGroupCall
+from pytgcalls.exceptions import AlreadyJoinedError, NoActiveGroupCall, GroupCallNotFound
 from pytgcalls.types import ChatUpdate, MediaStream, Update
 from pytgcalls.types.stream import StreamAudioEnded
 
@@ -247,7 +248,7 @@ class Call(PyTgCalls):
                 chat_id,
                 stream,
             )
-        except NoActiveGroupCall:
+        except (NoActiveGroupCall, GroupCallNotFound):
             try:
                 await self.join_assistant(original_chat_id, chat_id)
             except Exception as e:
@@ -259,15 +260,15 @@ class Call(PyTgCalls):
                 )
             except Exception as e:
                 raise AssistantErr(
-                    "**Aktif video sohbeti bulunamadı**\n\nLütfen video sohbeti başlattığınızdan emin olun."
+                    "**ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ғᴏᴜɴᴅ**\n\nᴩʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
                 )
         except AlreadyJoinedError:
             raise AssistantErr(
-                "**Asistan zaten video sohbette**\n\nMüzik bot sistemi, asistanın zaten video sohbette olduğunu tespit etti, Bu sorun devam ederse, video sohbeti yeniden başlatın ve tekrar deneyin."
+                "**ᴀssɪsᴛᴀɴᴛ ᴀʟʀᴇᴀᴅʏ ɪɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ**\n\nᴍᴜsɪᴄ ʙᴏᴛ sʏsᴛᴇᴍs ᴅᴇᴛᴇᴄᴛᴇᴅ ᴛʜᴀᴛ ᴀssɪᴛᴀɴᴛ ɪs ᴀʟʀᴇᴀᴅʏ ɪɴ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ, ɪғ ᴛʜɪs ᴩʀᴏʙʟᴇᴍ ᴄᴏɴᴛɪɴᴜᴇs ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ."
             )
         except TelegramServerError:
             raise AssistantErr(
-                "**Telegram sunucu hatası**\n\nLütfen video sohbetini kapatın ve yeniden başlatın."
+                "**ᴛᴇʟᴇɢʀᴀᴍ sᴇʀᴠᴇʀ ᴇʀʀᴏʀ**\n\nᴩʟᴇᴀsᴇ ᴛᴜʀɴ ᴏғғ ᴀɴᴅ ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɢᴀɪɴ."
             )
         await add_active_chat(chat_id)
         await music_on(chat_id)
