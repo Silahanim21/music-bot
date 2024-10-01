@@ -20,24 +20,24 @@ DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
 
 
 # Tools
-QUEUE_COMMAND : ["sıra","csıra", "player", "cplayer", "playing", "cplaying"]
-SONG_COMMAND : ["indir", "video", "vindir"]
-LYRICS_COMMAND : ["soz"]
+QUEUE_COMMAND : ["sıra","csıra", "player", "cplayer", "playing", "queue"]
+SONG_COMMAND : ["indir", "song", "vindir"]
+LYRICS_COMMAND : ["soz", "lyrics"]
 
 
 # Admin Commands
 AUTH_COMMAND : ["auth"]
 UNAUTH_COMMAND : ["unauth"]
 AUTHUSERS_COMMAND : ["authusers"]
-PAUSE_COMMAND : ["duraklat", "cduraklat"]
-RESUME_COMMAND : ["devam", "cdevam"]
-MUTE_COMMAND : ["sessiz", "csessiz"]
-UNMUTE_COMMAND : ["sesac", "csesac"]
-STOP_COMMAND : ["durdur", "end", "cdurdur", "cend"]
-SKIP_COMMAND : ["atla", "cskip"]
-SHUFFLE_COMMAND : ["karistir", "ckaristir"]
-LOOP_COMMAND : ["tekrarla", "ctekrarla"]
-SEEK_COMMAND : ["ileri", "cileri", "gerisar", "cgerisar"]
+PAUSE_COMMAND : ["duraklat", "pause", "cduraklat"]
+RESUME_COMMAND : ["devam", "resume", "cdevam"]
+MUTE_COMMAND : ["sessiz", "mute", "csessiz"]
+UNMUTE_COMMAND : ["sesac", "unmute", "csesac"]
+STOP_COMMAND : ["durdur", "stop", "end", "cdurdur", "cend"]
+SKIP_COMMAND : ["atla", "skip", "cskip"]
+SHUFFLE_COMMAND : ["karistir", "shuffle", "ckaristir"]
+LOOP_COMMAND : ["tekrarla", "loop", "ctekrarla"]
+SEEK_COMMAND : ["ileri", "seek", "cileri", "gerisar", "seekback", "cgerisar"]
 RESTART_COMMAND : ["reboot"]
 
 # Sudo Users Commaands
