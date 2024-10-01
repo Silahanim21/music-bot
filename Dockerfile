@@ -1,13 +1,23 @@
-FROM nikolaik/python-nodejs:python3.10-nodejs19
+FROM python:3.9-slim-buster
+# Updating Packages
+RUN apt update && apt upgrade -y
+RUN apt install git curl python3-pip ffmpeg -y
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends ffmpeg \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+# Copying Requirements
+COPY requirements.txt /requirements.txt
 
-COPY . /app/
-WORKDIR /app/
-RUN python3 -m pip install --upgrade pip setuptools
-RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
+# Installing Requirements
+RUN cd /
+RUN pip3 install --upgrade pip
+RUN pip3 install -U -r requirements.txt
 
-CMD python3 -m YukkiMusic
+# Setting up working directory
+RUN mkdir /AlexaMusic
+WORKDIR /AlexaMusic
+
+# Preparing for the Startup
+COPY start /start
+RUN chmod +x /start
+
+# Running Music Player Bot
+CMD bash start
