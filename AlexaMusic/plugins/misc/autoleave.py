@@ -10,6 +10,7 @@ as you want or you can collabe if you have new ideas.
 """
 
 import asyncio
+import logging
 from pyrogram.enums import ChatType
 import config
 from AlexaMusic import app
@@ -19,8 +20,10 @@ from AlexaMusic.utils.database import (
     is_active_chat,
     is_autoend,
     get_assistant,
+    set_loop,
 )
 
+autoend = {}
 
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT == str(True):
@@ -40,7 +43,7 @@ async def auto_leave():
                             chat_id = i.chat.id
                             if (
                                 chat_id != config.LOG_GROUP_ID
-                                and chat_id != -1002036606687
+                                and chat_id != -1001686672798
                             ):
                                 if not await is_active_chat(chat_id):
                                     try:
@@ -54,30 +57,45 @@ async def auto_leave():
 asyncio.create_task(auto_leave())
 
 
-# async def auto_end():
-#     while not await asyncio.sleep(5):
-#         if not await is_autoend():
-#             continue
-#         for chat_id in autoend:
-#             timer = autoend.get(chat_id)
-#             if not timer:
-#                 continue
-#             if datetime.now() > timer:
-#                 if not await is_active_chat(chat_id):
-#                     autoend[chat_id] = {}
-#                     continue
-#                 autoend[chat_id] = {}
-#                 try:
-#                     await Alexa.stop_stream(chat_id)
-#                 except:
-#                     continue
-#                 try:
-#                     await app.send_message(
-#                         chat_id,
-#                         "Bot, otomatik olarak onu temizledi ve video sohbeti sırasını terk etti çünkü hiç kimse şarkı dinleyemiyordu.",
-#                     )
-#                 except:
-#                     continue
+async def auto_end():
+    while not await asyncio.sleep(30):
+        try:
+            if not await is_autoend():
+                continue
+            processed_chat_ids = []  # To track chat_ids for deletion
+            for chat_id, count in autoend.items():
+                if count == 0:
+                    await stop_stream(chat_id)
+                    continue
+                if not await is_active_chat(chat_id):
+                    continue
 
+                assistant = await get_assistant(chat_id)
+                members = [member async for member in assistant.get_call_members(chat_id) if member is not None]
 
-# asyncio.create_task(auto_end())
+                if len(members) <= 1:
+                    await stop_stream(chat_id)
+                    await message(chat_id)
+                processed_chat_ids.append(chat_id)
+            for chat_id in processed_chat_ids:
+                del autoend[chat_id]
+        except Exception as e:
+            logging.info(e)
+
+async def stop_stream(chat_id):
+    try:
+        await Alexa.stop_stream(chat_id)
+        await set_loop(chat_id, 0)
+    except:
+        pass
+
+async def message(chat_id):
+    try:
+        await app.send_message(
+            chat_id,
+            "» ʙᴏᴛ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ʟᴇғᴛ ᴠɪᴅᴇᴏᴄʜᴀᴛ ʙᴇᴄᴀᴜsᴇ ɴᴏ ᴏɴᴇ ᴡᴀs ʟɪsᴛᴇɴɪɴɢ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ.",
+        )
+    except:
+        pass
+
+asyncio.create_task(auto_end())
