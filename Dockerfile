@@ -12,8 +12,8 @@ RUN pip3 install --upgrade pip
 RUN pip3 install -U -r requirements.txt
 
 # Setting up working directory
-RUN mkdir /AlexaMusic
-WORKDIR /AlexaMusic
+RUN mkdir /Alexa
+WORKDIR /Alexa
 
 # Running Music Player Bot
 CMD bash python3 -m AlexaMusic
