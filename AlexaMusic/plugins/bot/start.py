@@ -280,7 +280,7 @@ async def welcome(client, message: Message):
 @app.on_message(commandpro(["/alive", "esila"]))
 async def alive(client, message: Message):
     await message.reply_photo(
-        photo=f"https://envs.sh/SoF.jpg",
+        photo=f"https://envs.sh/SGJ.jpg",
         caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ Merhaba, Esila çalışıyor ve düzgün bir şekilde çalışıyor\n✪ Yukki ekibine teşekkürler 🌼 ..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴏᴡɴᴇʀ    : [ᴀsᴀᴅ ᴀʟɪ](https://t.me/debubluman)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [ᴀʟᴇxᴀ ʜᴇʟᴘ](https://t.me/esilabotbilgilendirme)┓\n┣★ ʀᴇᴘᴏ › : [ᴀʟᴇxᴀ ʀᴇᴘᴏ](https://github.com//AlexaMusic)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/Jankari_Ki_Duniya) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🌼Esila ᴄʜᴀᴛ 💮", url=f"https://t.me/esilabotbilgilendirme")]]
@@ -292,7 +292,7 @@ async def alive(client, message: Message):
 async def verify(client, message: Message):
     if await is_served_user(message.from_user.id):
         await message.reply_text(
-            text="😂 ᴅᴇᴀʀ ʏᴏᴜ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ᴠᴇʀɪғɪᴇᴅ",
+            text="😂 bebeğim zaten onaylandı",
         )
         return
     await add_served_user(message.from_user.id)
