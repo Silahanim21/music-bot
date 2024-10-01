@@ -139,19 +139,19 @@ async def gen_thumb(videoid, user_id, theme):
         ImageFont.truetype("assets/font.ttf", 25)
         para = textwrap.wrap(title, width=32)
         try:
-            text_w, text_h = draw.textsize(f"ALEXA MUSIC IS PLAYING OP", font=font)
+            text_w, text_h = draw.textsize(f"ESİLA MÜZİK OYNATILIYOR", font=font)
             draw.text(
                 ((1280 - text_w) / 2, 30),
-                f"ALEXA MUSIC IS PLAYING OP",
+                f"ESİLA MÜZİK OYNATILIYOR",
                 fill="red",
                 font=font,
             )
             text_w, text_h = draw.textsize(
-                f"Alexa Music One Of The Most Advanced Telegram Music Bot", font=arial
+                f"Esila Müzik, En Gelişmiş Telegram Müzik Botlarından Biri", font=arial
             )
             draw.text(
                 ((1280 - text_w) / 2, 80),
-                f"Alexa Music One Of The Most Advanced Telegram Music Bot",
+                f"Esila Müzik, En Gelişmiş Telegram Müzik Botlarından Biri",
                 fill="green",
                 font=arial,
             )
@@ -177,10 +177,10 @@ async def gen_thumb(videoid, user_id, theme):
                 )
         except:
             pass
-        text_w, text_h = draw.textsize(f"YouTube: Jankari Ki Duniya", font=arial)
+        text_w, text_h = draw.textsize(f"Aşkolar toplandık modumuzu yükseltiyoruz", font=arial)
         draw.text(
             ((1280 - text_w) / 2, 620),
-            f"YouTube: Jankari Ki Duniya",
+            f"Aşkolar toplandık modumuzu yükseltiyoruz",
             fill="white",
             font=arial,
         )
