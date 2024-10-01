@@ -2,20 +2,20 @@ HELP_1 = """🙄**<u>admin komutları:</u>**
 
 Sadece komutların başına "c" ekleyin, kanalda kullanmak için.
 
-/pause : Şu an oynatılan yayını durdurur.
-/resume : Duraklatılmış yayını devam ettirir.
-/mute : Şu an oynatılan yayını sessize alır.
-/unmute : Sessize alınmış yayını seslendirir.
-/skip : Şu an oynatılan yayını atlar ve sıradaki parçayı başlatır.
-/end veya /stop : Sırayı temizler ve mevcut yayını sonlandırır.
-/shuffle : Sıradaki parçaları karıştırır.
-/seek : Yayını belirtilen süreye atlar.
-/seekback : Yayını belirtilen süre kadar geriye alır.
+/duraklat : Şu an oynatılan yayını durdurur.
+/devam : Duraklatılmış yayını devam ettirir.
+/sessiz : Şu an oynatılan yayını sessize alır.
+/sesac : Sessize alınmış yayını seslendirir.
+/atla : Şu an oynatılan yayını atlar ve sıradaki parçayı başlatır.
+/end veya /durdur : Sırayı temizler ve mevcut yayını sonlandırır.
+/karistir : Sıradaki parçaları karıştırır.
+/ileri : Yayını belirtilen süreye atlar.
+/gerisar : Yayını belirtilen süre kadar geriye alır.
 /reboot : Sohbetiniz için botu yeniden başlatır.
 
 🥴<u>**oynatılan parçanın tekrarlanması :**</u>
 
-/loop [devre dışı bırak/etkinleştir] veya [1:10 arasında]
+/tekrarla [devre dışı bırak/etkinleştir] veya [1:10 arasında]
     : Etkinleştirildiğinde, bot mevcut oynatılan akışı döngüye alır ve 10 kez veya istenilen döngü sayısı kadar tekrar çalar.
 
 😜<u>**Yetkili Kullanıcılar :**</u>
@@ -30,7 +30,7 @@ Powered © by @esilabotbilgilendirme, @sorundestekk @sohbet_siir"""
 
 HELP_2 = """💞<u>**oynatma komutları:**</u>
 
-Mevcut komutlar: play, vplay, cplay: Şarkı çalma komutları.
+Mevcut komutlar: oynat, voynat, coynat: Şarkı çalma komutları.
 
 Zorla oynatma komutları:playforce, vplayforce, cplayforce: Şarkıyı zorla oynatma komutları.
 
@@ -38,7 +38,7 @@ Zorla oynatma komutları:playforce, vplayforce, cplayforce: Şarkıyı zorla oyn
 **v**: Video oynatma anlamına gelir.
 **force**: Zorla oynatma anlamına gelir.
 
-/oynat veya /vplay veya /cplay: İstenilen parçayı video sohbette yayınlamaya başlar.
+/oynat veya /voynat veya /coynat: İstenilen parçayı video sohbette yayınlamaya başlar.
 
 /playforce veya /vplayforce veya /cplayforce: Zorla oynat mevcut yayını durdurur ve istenilen parçayı yayınlamaya başlar.
 
@@ -60,7 +60,7 @@ HELP_3 = """😉<u>BOT KOMUTLARI:</u>
 /lyrics [parça adı] : İstenen parçanın sözlerini arar.
 /song [parça adı] veya [yt bağlantısı] : Herhangi bir YouTube parçasını ses veya video formatında indirir.
 /player : Etkileşimli bir oynatıcı paneli alır.
-/queue : Kuyrukta bekleyen parçaların listesini gösterir.
+/sıra : Kuyrukta bekleyen parçaların listesini gösterir.
 Powered © by @esilabotbilgilendirme, @sorundestekk @sohbet_siir"""
 
 HELP_4 = """😴<u>**Ekstra Komutlar:**</u>
