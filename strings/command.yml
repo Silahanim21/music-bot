@@ -9,7 +9,7 @@ STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["oynat", "fuck", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["oynat", "oynat", "voynat", "coynat", "cvoynat", "oynatforce", "voynatforce", "coynatforce", "cvoynatforce"]
 PLAYMODE_COMMAND : ["playmode"]
 CHANNELPLAY_COMMAND : ["channelplay"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
@@ -20,24 +20,24 @@ DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
 
 
 # Tools
-QUEUE_COMMAND : ["queue","cqueue", "player", "cplayer", "playing", "cplaying"]
-SONG_COMMAND : ["song", "video", "vsong"]
-LYRICS_COMMAND : ["lyrics"]
+QUEUE_COMMAND : ["sıra","csıra", "player", "cplayer", "playing", "cplaying"]
+SONG_COMMAND : ["indir", "video", "vindir"]
+LYRICS_COMMAND : ["soz"]
 
 
 # Admin Commands
 AUTH_COMMAND : ["auth"]
 UNAUTH_COMMAND : ["unauth"]
 AUTHUSERS_COMMAND : ["authusers"]
-PAUSE_COMMAND : ["pause", "cpause"]
-RESUME_COMMAND : ["resume", "cresume"]
-MUTE_COMMAND : ["mute", "cmute"]
-UNMUTE_COMMAND : ["unmute", "cunmute"]
-STOP_COMMAND : ["stop", "end", "cstop", "cend"]
-SKIP_COMMAND : ["skip", "cskip"]
-SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
-LOOP_COMMAND : ["loop", "cloop"]
-SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
+PAUSE_COMMAND : ["duraklat", "cduraklat"]
+RESUME_COMMAND : ["devam", "cdevam"]
+MUTE_COMMAND : ["sessiz", "csessiz"]
+UNMUTE_COMMAND : ["sesac", "csesac"]
+STOP_COMMAND : ["durdur", "end", "cdurdur", "cend"]
+SKIP_COMMAND : ["atla", "cskip"]
+SHUFFLE_COMMAND : ["karistir", "ckaristir"]
+LOOP_COMMAND : ["tekrarla", "ctekrarla"]
+SEEK_COMMAND : ["ileri", "cileri", "gerisar", "cgerisar"]
 RESTART_COMMAND : ["reboot"]
 
 # Sudo Users Commaands
