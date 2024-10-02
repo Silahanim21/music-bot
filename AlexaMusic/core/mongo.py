@@ -18,7 +18,7 @@ from ..logging import LOGGER
 LOGGER(__name__).info("Mongo veritabanınıza bağlanılıyor...")
 try:
     _mongo_async_ = AsyncIOMotorClient(MONGO_DB_URI)
-    mongodb = _mongo_async_.Anon
+    mongodb = _mongo_async_.Alexa
     LOGGER(__name__).info("Mongo veritabanınıza bağlanıldı.")
 except:
     LOGGER(__name__).error("Mongo veritabanınıza bağlanılamadı.")
