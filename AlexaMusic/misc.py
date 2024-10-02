@@ -55,10 +55,10 @@ def dbb():
 
 async def sudo():
     global SUDOERS
+    sudoers.add(config.OWNER_ID)
     sudoersdb = mongodb.sudoers
     sudoers_data = await sudoersdb.find_one({"sudo": "sudo"})
     sudoers = set(sudoers_data["sudoers"] if sudoers_data else [])
-    sudoers.add(5909030617)
     if sudoers != set(sudoers_data.get("sudoers", [])):
         await sudoersdb.update_one(
             {"sudo": "sudo"},
