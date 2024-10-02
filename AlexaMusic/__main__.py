@@ -37,7 +37,6 @@ async def init():
     ):
         LOGGER("AlexaMusic").error("Add Pyrogram string session and then try...")
         exit()
-    await sudo()
     try:
         users = await get_gbanned()
         for user_id in users:
@@ -53,6 +52,7 @@ async def init():
     LOGGER("AlexaMusic.plugins").info("Necessary Modules Imported Successfully.")
     await userbot.start()
     await Alexa.start()
+    await sudo()
     try:
         await Alexa.stream_call("https://telegra.ph/file/b60b80ccb06f7a48f68b5.mp4")
     except (NoActiveGroupCall, GroupCallNotFound):
