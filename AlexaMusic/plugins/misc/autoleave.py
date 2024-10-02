@@ -54,27 +54,30 @@ async def auto_leave():
                     pass
 
 
-asyncio.create_task(auto_leave())
-
-
 async def auto_end():
     while True:
-        await asyncio.sleep(30)
+        await asyncio.sleep(5)
         for chat_id, timer in list(autoend.items()):
             if datetime.now() > timer:
                 if not await is_active_chat(chat_id):
-                    del autoend[chat_id]
+                    autoend.pop(chat_id)
                     continue
+
                 userbot = await get_assistant(chat_id)
-                member_count = 0
+                members = []
+
                 async for member in userbot.get_call_members(chat_id):
-                    if member is not None:
-                        member_count += 1
-                    if member_count > 1:
-                        break
-                if member_count <= 1:
+                    if member is None:
+                        continue
+                    members.append(member)
+
+                if len(members) in [0, 1]:
                     try:
                         await Alexa.stop_stream(chat_id)
+                    except Exception:
+                        pass
+
+                    try:
                         await app.send_message(
                             chat_id,
                             "ʙᴏᴛ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴄʟᴇᴀʀᴇᴅ ᴛʜᴇ ǫᴜᴇᴜᴇ ᴀɴᴅ ʟᴇғᴛ ᴠɪᴅᴇᴏᴄʜᴀᴛ ʙᴇᴄᴀᴜsᴇ ɴᴏ ᴏɴᴇ ᴡᴀs ʟɪsᴛᴇɴɪɴɢ sᴏɴɢs ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ.",
@@ -82,6 +85,8 @@ async def auto_end():
                     except Exception:
                         pass
 
-                del autoend[chat_id]
+                autoend.pop(chat_id)
+
 
 asyncio.create_task(auto_end())
+asyncio.create_task(auto_leave())

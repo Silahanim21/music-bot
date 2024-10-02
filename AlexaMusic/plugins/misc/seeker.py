@@ -82,16 +82,17 @@ async def markup_timer():
 
                 userbot = await get_assistant(chat_id)
                 try:
-                    member_count = 0
+                    members = []
+
                     async for member in userbot.get_call_members(chat_id):
-                        if member is not None:
-                            member_count += 1
-                        if member_count > 1:
-                            break
-                    if member_count <= 1:
+                        if member is None:
+                            continue
+                        members.append(member)
+
+                    if len(members) == 0 or len(members) == 1:
                         autoend[chat_id] = datetime.now() + timedelta(seconds=30)
                 except Exception:
-                    pass
+                    pass  # Passing this for don't affect the below button edition function
                 try:
                     buttons = (
                         stream_markup_timer(
