@@ -37,7 +37,7 @@ async def init():
     ):
         LOGGER("AlexaMusic").error("Add Pyrogram string session and then try...")
         exit()
-    await sudo()
+    #await sudo()
     try:
         users = await get_gbanned()
         for user_id in users:
