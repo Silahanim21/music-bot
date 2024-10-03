@@ -21,6 +21,7 @@ from AlexaMusic.utils.database import (
     is_active_chat,
     is_autoend,
     get_assistant,
+    set_loop
 )
 
 autoend = {}
@@ -87,3 +88,24 @@ async def auto_end():
 
 
 asyncio.create_task(auto_end())
+
+async def auto_endx(chat_id: int):
+    while True:
+        await asyncio.sleep(30)
+        try:
+            userbot = await get_assistant(chat_id)
+            members = []
+            async for member in userbot.get_call_members(chat_id):
+                if member is None:
+                    continue
+                members.append(member)
+            m = next((m for m in members if m.chat.id == userbot.id), None)
+            if m is None:
+                continue
+            is_muted = bool(m.is_muted and not m.can_self_unmute)
+            if is_muted:
+                await Alexa.stop_stream(chat_id)
+                await set_loop(chat_id, 0)
+                await app.send_message(chat_id, "ᴀssɪsᴛᴀɴᴛ ɪs ᴍᴜᴛᴇᴅ ғᴏʀ 𝟹𝟶 sᴇᴄᴏɴᴅs ɪɴ ᴠᴏɪᴄᴇᴄʜᴀᴛ. sᴛᴏᴘᴘɪɴɢ ᴛʜᴇ ᴍᴜsɪᴄ.")
+        except:
+            pass            
