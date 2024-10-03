@@ -1,20 +1,15 @@
-FROM python:3.9-slim-buster
+FROM python:3.9-slim-bullseye
 
-# Install system dependencies
-RUN apt-get update -y && apt-get upgrade -y \
-    && apt-get install -y --no-install-recommends ffmpeg \
-    && apt-get install -y git \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+WORKDIR /AlexaMusic
+RUN chmod 777 /AlexaMusic
 
-# Set the working directory
-WORKDIR /app/
+RUN apt-get -qq update && apt-get -qq -y upgrade
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y git gcc build-essential
 
-# Copy application files
-COPY . /app/
+RUN pip3 install -U pip
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir -U -r requirements.txt
 
-# Install Python dependencies
-RUN pip3 install --no-cache-dir -r requirements.txt
+COPY . .
 
-# Run the music player bot
-CMD ["bash", "start"]
+CMD ["python3", "-m", "AlexaMusic"]
