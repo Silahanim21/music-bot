@@ -89,11 +89,11 @@ async def auto_end():
 
 asyncio.create_task(auto_end())
 
-async def auto_endx(self, chat_id: int):
+async def auto_endx(chat_id: int):
     while True:
         await asyncio.sleep(30)
         try:
-            userbot = await get_assistant(self, chat_id)
+            userbot = await get_assistant(chat_id)
             members = []
             async for member in userbot.get_call_members(chat_id):
                 if member is None:
