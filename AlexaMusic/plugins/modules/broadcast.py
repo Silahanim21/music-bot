@@ -81,7 +81,7 @@ async def clean_mode(client, update, users, chats):
 async def braodcast_message(client, message, _):
     if message.from_user.id not in OWNER_ID:
         return await message.reply_text(
-            "» **😁 Hehehe, yalnızca sahibim yayın yapabilir**\n» 🤫  Promosyon için @debubluman'a yazın"
+            "» **😁 Hehehe, yalnızca sahibim yayın yapabilir**\n» 🤫  Promosyon için @sorundestekk'e yazın"
         )
     global IS_BROADCASTING
     if message.reply_to_message:
