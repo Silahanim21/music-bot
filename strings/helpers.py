@@ -59,6 +59,7 @@ HELP_3 = """😉<u>BOT KOMUTLARI:</u>
 /song [parça adı] veya [yt bağlantısı] : Herhangi bir YouTube parçasını ses veya video formatında indirir.
 /player : Etkileşimli bir oynatıcı paneli alır.
 /sıra : Kuyrukta bekleyen parçaların listesini gösterir.
+Powered by @esilabotbilgilendirme, @sorundestekk @sohbet_siir."""
 
 HELP_4 = """😴<u>**Ekstra Komutlar:**</u>
 
