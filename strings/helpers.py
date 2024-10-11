@@ -68,6 +68,35 @@ HELP_4 = """😴<u>**Ekstra Komutlar:**</u>
 /start : Müzik botunu başlatır.
 /help : Komutların açıklamalarıyla birlikte yardım menüsünü al.
 /ping : Botun ping değerini ve sistem istatistiklerini gösterir.
+/video: Video İndirir.
+/tgm: Foto, video ve ya GIF göndererek link ala bilirsiniz.
+/sehid: Bu Komutla size Şehit isimleri gönderecem.
+/zar: Açıklama: zar atar
+/top: top atar
+/bowling: bowling atar
+/ok: ok atar
+/jackpot: jackpot atar
+/basket: basket atar
+/game: Oyunu Başlatır
+/atla: zor kelimeyi atlar
+/dur: Mövcud Oyunu Saxlayar
+/skor: Her Bir Oyuncunun Puanını Gösterir
+/kizfoto: Rastgele 16+ fotoğrafları Atar.
+/kedi: Rastgele kedi fotoğrafları Atar
+/anime: Rastgele Anime fotoğrafları Atar
+/araba: Rastgele Araba fotoğrafları Atar
+/araba2: Rastgele Araba fotoğrafları Atar
+/tema: Rastgele Telegram Teması Atar
+/profil: Rastgele Profil fotoğrafları Atar
+/sevgi: romantik Sevgiye Ait Sözler Atar.
+/bio: Hazır Bionuz Üçün Sözler Atar.
+/nova: Botun çalıştığını kontrol eder.
+/tag: [Sebeb] - 5 - Li Etiketler.
+/ttag: [Sebeb] - Tekli Etiketler.
+/stag: Güzel Sözlerle Etiketler.
+/etag: [Sebeb] - Emoji İle Etiketler.
+/btag: [Sebeb] - Bayraklarla Etiketler
+/admin: Adminleri Toplu Siyahısı Etiketler
 
 🧐<u>**Grup Ayarları:**</u>
 /settings : Grubun ayarlarını etkileşimli çevrimiçi menü ile gösterir.
