@@ -27,7 +27,6 @@ Yetkili Kullanıcılar (Auth Users), chat içinde admin hakları olmadan bot üz
 /authusers: Yetkili kullanıcılar listesini gösterir.
 Powered © by @esilabotbilgilendirme, @sorundestekk @sohbet_siir"""
 
-
 HELP_2 = """💞<u>**oynatma komutları:**</u>
 
 Mevcut komutlar: oynat, voynat, coynat: Şarkı çalma komutları.
@@ -52,7 +51,6 @@ Zorla oynatma komutları:playforce, vplayforce, cplayforce: Şarkıyı zorla oyn
 /play : Sunucudaki kayıtlı çalma listenizden çalmaya başlar.
 Powered © by @esilabotbilgilendirme, @sorundestekk @sohbet_siir"""
 
-
 HELP_3 = """😉<u>BOT KOMUTLARI:</u>
 
 /stats : En iyi 10 parça global istatistiklerini, botun en iyi 10 kullanıcısını, bot üzerindeki en iyi 10 sohbeti, sohbet içinde en çok çalınan 10 parçayı ve daha fazlasını alır.
@@ -61,7 +59,6 @@ HELP_3 = """😉<u>BOT KOMUTLARI:</u>
 /song [parça adı] veya [yt bağlantısı] : Herhangi bir YouTube parçasını ses veya video formatında indirir.
 /player : Etkileşimli bir oynatıcı paneli alır.
 /sıra : Kuyrukta bekleyen parçaların listesini gösterir.
-Powered © by @esilabotbilgilendirme, @sorundestekk @sohbet_siir"""
 
 HELP_4 = """😴<u>**Ekstra Komutlar:**</u>
 
