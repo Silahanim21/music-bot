@@ -117,7 +117,7 @@ async def stream(
                     forceplay=forceplay,
                 )
                 # theme = await check_theme(chat_id)
-                img = await gen_thumb(vidid, user_id)
+                img = await gen_thumb(vidid)
                 button = stream_markup(_, vidid, chat_id)
                 run = await app.send_photo(
                     original_chat_id,
@@ -205,7 +205,7 @@ async def stream(
                 forceplay=forceplay,
             )
             # theme = await check_theme(chat_id)
-            img = await gen_thumb(vidid, user_id)
+            img = await gen_thumb(vidid)
             button = stream_markup(_, vidid, chat_id)
             try:
                 run = await app.send_photo(
@@ -369,7 +369,7 @@ async def stream(
                 forceplay=forceplay,
             )
             # theme = await check_theme(chat_id)
-            img = await gen_thumb(vidid, user_id)
+            img = await gen_thumb(vidid)
             button = telegram_markup(_, chat_id)
             run = await app.send_photo(
                 original_chat_id,
