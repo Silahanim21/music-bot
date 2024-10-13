@@ -33,7 +33,6 @@ from AlexaMusic.utils.inline.playlist import close_markup
 from AlexaMusic.utils.pastebin import Alexabin
 from AlexaMusic.utils.stream.queue import put_queue, put_queue_index
 from AlexaMusic.utils.thumbnails import gen_thumb, gen_qthumb
-from AlexaMusic.utils.theme import check_theme
 
 
 async def stream(
@@ -177,7 +176,7 @@ async def stream(
             )
             # theme = await check_theme(chat_id)
             position = len(db.get(chat_id)) - 1
-            qimg = await gen_qthumb(vidid, user_id, theme)
+            qimg = await gen_qthumb(vidid, user_id)
             button = queue_markup(_, vidid, chat_id)
             run = await app.send_photo(
                 original_chat_id,
