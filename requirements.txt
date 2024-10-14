@@ -23,6 +23,5 @@ tgcrypto
 yt-dlp
 youtube-search
 youtube-search-python
-numpy
 flask
 gunicorn
