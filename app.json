@@ -1,52 +1,50 @@
 {
-    "name": "YukkiMusic",
-    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://envs.sh/Tnq.jpg",
+    "name": "Alexa Music",
+    "description": "Deploy Alexa music on railwey make sure to star the projecte.",
+    "logo": "https://telegra.ph/file/ba967503682a55beaedd3.png",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Yukki",
-    "YukkiMusicBot",
-    "telegram-bot",
+    "Alexa",
+    "alexamusic",
+    "alexamusicbot",
     "pyrogram"
     ],
-
-    "stack": "container",
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "29772838",
+        "value": "",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "15ce514f4f3fcea70d7a49dc5064b839",
+        "value": "",
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "A Bot's token Get it from Botfather",
-        "value": "7445826535:AAEh1p986jgI-EaaSDZiRQnLMGEh1BV1azc",
+        "description": "A Bot's token from Botfather",
+        "value": "",
         "required": true
-      },
-      "EXTRA_PLUGINS": {
-        "description": "if You want to load extra plugins with music plugins so fill True  if you don't want to load extra plugins so Fill False",
-        "value": "True",
-        "required": false
-      },
-      "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
-        "value": "mongodb+srv://kurt67143:DLArCT171SF9wRKJ@alexsoza.xpoqv.mongodb.net/?retryWrites=true&w=majority&appName=Alexsoza",
-        "required": false
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "7445826535",
+        "value": "5303133436",
+        "required": true
+      },        
+      "MONGO_DB_URI": {
+        "description": "Mongo DB URL",
+        "value": "",
         "required": true
       },
-      "STRING_SESSIONS": {
-        "description": "A Pyrogram String Session. One Assistant is Compulsory. You Can Fill Multiple String Session Seperating With (,) comma",
-        "value": "BAHGTCYAlLYTB7lJIYw-wXCg_oe46qaXuR9F5_C4as5C8rj77pOcTehusn2RLdyvY1039TQxwaXKcnMgkTbT33lr5QhIrgTjEOa_J7EL4loLiICK7jreBTVlElF1Lccr1cII2dll2yk5MKEBtFGYg-trgwHshAbbJptHMD8ZzxsIqZRkpR5zqr9FtHyznHX52CfQpanHUPEV7QEhNfbMZkZeouH7BmyXJGfUwx0CgjndHAbIMW2Q_PC8locJOJOiYTRqzv8YmZ9G3OW84RXgEH2aQp2-eIK0g0Dd_uo0gN2-1uxBe1HdDFqz45tLpPZtGi8z_j4ZV1Ux3xfIHUROrXV_4Dl3rgAAAAGxQGFHAA",
+      "MUSIC_BOT_NAME": {
+        "description": "A name for your Music Bot.",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "A Pyrogram Session Get It From  Here @Session_Generator_Robot.",
+        "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
@@ -55,23 +53,18 @@
         "required": false
       },
       "HEROKU_APP_NAME": {
-        "description": "Your heroku app/bot's name",
+        "description": "Your heroku app name",
         "value": "",
         "required": false
       },
-      "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "-1002065943011",
-        "required": true
-      },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/TheTeamVivek/YukkiMusic",
+        "value": "https://github.com/TheTeamAlexa/AlexaMusic",
         "required": true
       },
-      "UPSTREAM_BRANCH": {
-        "description": "Upstream Repo's Branch Name",
-        "value": "master",
+      "LOG_GROUP_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
+        "value": "",
         "required": true
       }
     },
@@ -80,13 +73,8 @@
               "url": "heroku/python"
           },
           {
-              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+              "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview.git"
           }
       ],
-      "formation": {
-          "worker": {
-              "quantity": 1,
-              "size": "basic"
-          }
-      }
-}
+      "stack": "container"
+  }
