@@ -327,7 +327,7 @@ def queue_markup(_, videoid, chat_id):
                 callback_data=f"ADMIN Devam|{chat_id}",
             ),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Duraklat|{chat_id}"),
-            InlineKeyboardButton(text="☆", callback_data=f"add_playlist {videoid}"),
+            InlineKeyboardButton(text="+", callback_data=f"add_playlist {videoid}"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Atla|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Durdur|{chat_id}"),
         ],
