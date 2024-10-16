@@ -330,21 +330,8 @@ def queue_markup(_, videoid, chat_id):
             InlineKeyboardButton(text="+", callback_data=f"add_playlist {videoid}"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Atla|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Durdur|{chat_id}"),
-            )
-        ],
-    ]
-    return buttons
-
- 
-           InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
-            )
-        ],
-    ]
-    return buttons
-
-  
+          ],
+          [ 
           InlineKeyboardButton(
                 text="〆 ᴄʟᴏsᴇ 〆", callback_data=f"ADMIN CloseA|{chat_id}"
             )
