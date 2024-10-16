@@ -52,7 +52,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text=" Aşkom 💞", url=f"https://t.me/debubluman"
+                text=" SAHİBİ 💞", url=f"https://t.me/debubluman"
             ),
         ],
         [
@@ -60,7 +60,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
-            InlineKeyboardButton(text="Esila ᴄʜᴀᴛ 💌", url=f"https://t.me/sorundestekk"),
+            InlineKeyboardButton(text="DUYURU 💌", url=f"https://t.me/sorundestekk"),
         ],
         [
             InlineKeyboardButton(
