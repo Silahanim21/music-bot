@@ -243,7 +243,7 @@ queue_4 : "⏳ Sıraya eklendi **#{0}\n\n🔘Başlık:** {1}\n**⏱Süre:** {2}\
 queue_5 : "Sırada sadece bir şarkı var, tüm sırayı görmek için sıraya birkaç şarkı daha ekleyin."
 
 # All Streaming Lines
-stream_1 : "📡 **Yayın Başladı**\n\n👉**Talep Eden:** {0}\n🔦**Bilgi: **[Buradan]({1})"
+stream_1 : "⚡𝒀𝑨𝒀𝑰𝑵 𝑩𝑨𝑺𝑳𝑨𝑫𝑰⚡\n\n👉**Talep Eden:** {0}\n🔦**Bilgi: **[Buradan]({1})"
 stream_2 : "📡 **URL ile Yayına Başladı **\n\n👉**Talep Eden:** {0}"
 stream_3 : "📡 **Yayın Başladı**\n\n**🔘Başlık:** {0}\n⌛️**Süre**: {1}\n👤**İsteyen:** {2}"
 stream_4 : "📡 **Akış Başlatıldı**\n\n**🔘Başlık:** [{0}]({1})\n⌛️**Süre**: {2}\n👤**İsteyen:** {3}"
@@ -260,24 +260,24 @@ UNBAN_BUTTON : "🗑 Asistanın yasağını kaldır"
 L_B_1 : "🚀 Şarkı Sözlerini Şimdi Kontrol Et"
 
 # Start
-S_B_1 : "🗒 Komutlar"
-S_B_2 : "🔧 Ayarlar"
-S_B_3 : "📨 Destek"
-S_B_4 : "📨 Kanal"
-S_B_5 : "✚ Beni Grubuna ekle"
-S_B_6 : "💡 Git Repo"
-S_B_7 : "👤 Bot Owner"
-S_B_8 : "🔎 Nasıl kullanılır? Komutlar Menüsü."
+S_B_1 : "🗒 𝗄𝗈𝗆𝗎𝗍𝗅𝖺𝗋"
+S_B_2 : "🔧 𝖺𝗒𝖺𝗋𝗅𝖺𝗋"
+S_B_3 : "📨 𝖽𝖾𝗌𝗍𝖾𝗄"
+S_B_4 : "📨 𝖽𝗎𝗒𝗎𝗋𝗎 "
+S_B_5 : "✚ 𝖻𝖾𝗇𝗂 𝗀𝗋𝗎𝖻𝗎𝗇𝖺 𝖾𝗄𝗅𝖾"
+S_B_6 : "💡 𝗄𝖺𝗒𝗇𝖺𝗄 𝗄𝗈𝖽"
+S_B_7 : "👤 𝗌𝖺𝗁𝗂𝖻𝗂"
+S_B_8 : "🔎 𝖻𝗈𝗍 𝗄𝗈𝗆𝗎𝗍𝗅𝖺𝗋 𝗆𝖾𝗇ü𝗌ü."
 
 #Help 
-H_B_1 : "Admin Komutları"
-H_B_2 : "Oynatma Komutları"
-H_B_3 : "Bot Komutları"
-H_B_4 : "Extra Komutlar"
+H_B_1 : "𝖺𝖽𝗆𝗂𝗇 𝗄𝗈𝗆𝗎𝗍𝗅𝖺𝗋ı"
+H_B_2 : "𝗈𝗒𝗇𝖺𝗍𝗆𝖺 𝗄𝗈𝗆𝗎𝗍𝗅𝖺𝗋ı"
+H_B_3 : "𝖻𝗈𝗍 𝗄𝗈𝗆𝗎𝗍𝗅𝖺𝗋ı"
+H_B_4 : "𝖾𝗑𝗍𝗋𝖺 𝗄𝗈𝗆𝗎𝗍𝗅𝖺𝗋"
 H_B_5 : "Menüyü Kapat"
-H_B_6 : "🙊 Sudo 🙊"
-H_B_7 : "🥀 Modül 🥀"
-H_B_8 : "💰 Satın Al 💰"
+H_B_6 : "🙊 𝗌𝗎𝖽𝗈 🙊"
+H_B_7 : "🥀 𝗆𝗈𝖽ü𝗅 🥀"
+H_B_8 : "💰 𝖺𝖻𝗈𝗇𝖾𝗅𝗂𝗄 💰"
 
 #PlayMode
 PM_B_1 : "Doğrudan Oynat"
