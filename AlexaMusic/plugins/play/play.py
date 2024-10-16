@@ -57,7 +57,7 @@ async def play_commnd(
 ):
     if not await is_served_user(message.from_user.id):
         await message.reply_text(
-            text="😢 Sevgili kullanıcı, siz Esila veritabanında doğrulanmış bir üye değildi.\n☔ Lütfen kendinizi Esila veritabanında çalıştırmak için /verify tipini kullanın.",
+            text=" oynatma yapamadan önce buna tıkla 👉 /verify 👈.",
         )
         return
     mystic = await message.reply_text(
