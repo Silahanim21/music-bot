@@ -102,7 +102,7 @@ class Userbot(Client):
             try:
                 await self.two.send_message(
                     config.LOG_GROUP_ID,
-                    "Asistan başlatıldı, şimdi Telegram video sohbetlerinde müziğin keyfini çıkarma zamanı.",
+                    "ASİSTAN AKTİF python (12.0.13).",
                 )
             except:
                 LOGGER(__name__).error(
