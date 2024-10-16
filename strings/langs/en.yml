@@ -243,7 +243,7 @@ queue_4 : "⏳ Sıraya eklendi **#{0}\n\n🔘Başlık:** {1}\n**⏱Süre:** {2}\
 queue_5 : "Sırada sadece bir şarkı var, tüm sırayı görmek için sıraya birkaç şarkı daha ekleyin."
 
 # All Streaming Lines
-stream_1 : "📡 **Yayın Başladı**\n\n👉**Talep Eden:** {0}\n🔦**Bilgi: **[Buradan]({1})"
+stream_1 : "⚡ **𝑌𝐴𝑌𝐼𝑁 𝐵𝐴𝑆𝐿𝐴𝐷𝐼**\n\n👉**Talep Eden:** {0}\n🔦**Bilgi: **[Buradan]({1})"
 stream_2 : "📡 **URL ile Yayına Başladı **\n\n👉**Talep Eden:** {0}"
 stream_3 : "📡 **Yayın Başladı**\n\n**🔘Başlık:** {0}\n⌛️**Süre**: {1}\n👤**İsteyen:** {2}"
 stream_4 : "📡 **Akış Başlatıldı**\n\n**🔘Başlık:** [{0}]({1})\n⌛️**Süre**: {2}\n👤**İsteyen:** {3}"
@@ -251,9 +251,9 @@ stream_4 : "📡 **Akış Başlatıldı**\n\n**🔘Başlık:** [{0}]({1})\n⌛�
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "🗑 Kapat"
+CLOSE_BUTTON  : "🗑 𝐾𝐴𝑃𝐴𝑇"
 CLOSEMENU_BUTTON  : "🗑 Menüyü Kapat"
-BACK_BUTTON : "⬅ Geri"
+BACK_BUTTON : "⬅ 𝐺𝐸𝑅𝐼"
 UNBAN_BUTTON : "🗑 Asistanın yasağını kaldır"
 
 #Lyrics
