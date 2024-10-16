@@ -33,7 +33,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002065943011"))
 
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "kumsal")
 
-OWNER_ID = int(getenv("OWNER_ID", "7268753735"))
+OWNER_ID = int(getenv("OWNER_ID", "6387858072"))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
@@ -41,17 +41,17 @@ BOT_ID = getenv("BOT_ID", "7445826535")
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/saymen930/Alexa")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/kumsalfed5456/kumsalXmusic")
 
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/esilabotbilgilendirme")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/kumsaldestekkanal")
 
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/sorundestekk")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/GecSohbettr")
 
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 
 AUTO_LEAVE_ASSISTANT_TIME = int(getenv("ASSISTANT_LEAVE_TIME", "11500"))
 
@@ -105,17 +105,17 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/6ec3e501515dda7214edb-9259a5b5a70eb789c0.jpg"
+    "START_IMG_URL", "https://graph.org/file/e5a809fe337adff6f4d4a.jpg"
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "assets/Ping.jpeg",
+    "https://graph.org/file/e5a809fe337adff6f4d4a.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "assets/Playlist.jpeg",
+    "assets/playlist.jpeg",
 )
 
 GLOBAL_IMG_URL = getenv(
