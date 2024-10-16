@@ -27,8 +27,8 @@ def song_markup(_, vidid):
         ],
         [
             InlineKeyboardButton(
-                text="🌻 sᴜᴩᴩᴏʀᴛ 🌻",
-                url="https://t.me/Alexa_Help",
+                text="🌻 𝖣𝖤𝖲𝖳𝖤𝖪 🌻",
+                url="https://t.me/GeceSohbettr",
             ),
             InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
         ],
