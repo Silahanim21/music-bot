@@ -49,7 +49,7 @@ Zorla oynatma komutları:playforce, vplayforce, cplayforce: Şarkıyı zorla oyn
 /playlist : Sunuculardaki kayıtlı çalma listenizi kontrol edin.
 /deleteplaylist : Çalma listenizdeki herhangi bir kaydedilmiş parçayı silin.
 /play : Sunucudaki kayıtlı çalma listenizden çalmaya başlar.
-Powered © by @esilabotbilgilendirme, @sorundestekk @sohbet_siir"""
+"""
 
 HELP_3 = """😉<u>BOT KOMUTLARI:</u>
 
@@ -59,7 +59,7 @@ HELP_3 = """😉<u>BOT KOMUTLARI:</u>
 /song [parça adı] veya [yt bağlantısı] : Herhangi bir YouTube parçasını ses veya video formatında indirir.
 /player : Etkileşimli bir oynatıcı paneli alır.
 /sıra : Kuyrukta bekleyen parçaların listesini gösterir.
-Powered by @esilabotbilgilendirme, @sorundestekk @sohbet_siir."""
+"""
 
 HELP_4 = """😴<u>**Ekstra Komutlar:**</u>
 
@@ -69,7 +69,7 @@ HELP_4 = """😴<u>**Ekstra Komutlar:**</u>
 
 🧐<u>**Grup Ayarları:**</u>
 /settings : Grubun ayarlarını etkileşimli çevrimiçi menü ile gösterir.
-Powered by @esilabotbilgilendirme, @sorundestekk @sohbet_siir."""
+"""
 
 HELP_5 = """<u>ᴀᴅᴅ & ʀᴇᴍᴏᴠᴇ sᴜᴅᴏᴇʀs:</u>**
 /addsudo [kullanıcı adı veya bir kullanıcıya yanıt ver]
@@ -132,7 +132,8 @@ HELP_5 = """<u>ᴀᴅᴅ & ʀᴇᴍᴏᴠᴇ sᴜᴅᴏᴇʀs:</u>**
 **-nobot** : Botun mesajı yayınlamasını zorla engeller.
 
 **Örnek**: `/broadcast -user -assistant -pin Yayın Testi`
-**Powered © by** @esilabotbilgilendirme, @sorundestekk @sohbet_siir"""
+**
+"""
 
 HELP_7 = """💌**<u>Burada yeni özellikleri bulabilirsiniz:</u>**
 
@@ -140,7 +141,7 @@ HELP_7 = """💌**<u>Burada yeni özellikleri bulabilirsiniz:</u>**
 /id : Kullanıcı ve sohbet ID'sini kontrol etmek için.
 /gcast -user -assistant -pin Yayın Testi
 /verify : Alexa veritabanında kendinizi doğrulayın.
-Powered © by @esilabotbilgilendirme, @sorundestekk @sohbet_siir"""
+"""
 
 HELP_8 = """💰**<u>Yayın Aboneliği Özelliği:</u>**
 
@@ -157,4 +158,4 @@ Artık bizden aylık ve haftalık yayın aboneliği satın alabilirsiniz. Haftal
 **Herkes Kullanabilir**
 /mysubscription : Kalan günler ve yayın sayısıyla birlikte aboneliğinizi kontrol edebilirsiniz.
 /paidbroadcast : Tüm kullanıcılara ve gruplara aynı anda yayın mesajı gönderir, eğer aktif bir aboneliğiniz varsa.
-Powered © by @esilabotbilgilendirme, @sorundestekk @sohbet_siir"""
+"""
