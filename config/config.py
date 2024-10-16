@@ -21,7 +21,7 @@ load_dotenv()
 API_ID = int(getenv("API_ID", "29772838"))
 API_HASH = getenv("API_HASH", "15ce514f4f3fcea70d7a49dc5064b839")
 
-BOT_TOKEN = getenv("BOT_TOKEN", "7445826535:AAEh1p986jgI-EaaSDZiRQnLMGEh1BV1azc")
+BOT_TOKEN = getenv("BOT_TOKEN", "7563580567:AAHdItwB78m3OBWJ8SdbfpiRv5TWQMO0h7k")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://kurt67143:DLArCT171SF9wRKJ@alexsoza.xpoqv.mongodb.net/?retryWrites=true&w=majority&appName=Alexsoza")
 
@@ -37,7 +37,7 @@ OWNER_ID = int(getenv("OWNER_ID", "7268753735"))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-BOT_ID = getenv("BOT_ID", "7445826535")
+BOT_ID = getenv("BOT_ID", "7563580567")
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
@@ -86,7 +86,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", "BAHGTCYAwAkQPRX5T61Svuqa-63JoNPaFQ125p-Z2zByargNtYfQmlgqWhaMrT6b9afbIuL615hHtjHu_XcNqpEnf3z-TctV3gtaUh6f1Yz_1RRmKz8tLd2H18sj94TrPRak1XhykIvjEppxxeUm5yAH9N7k8D-QUrAVrtVH__-Varp86lPD2CC3KmL42egDZdPTEe6oriBm1pnt6FEFwQJRvLTRN4VrDNISiNTLBP9bnR6qU2A195NWBv4gu6yRoHuAag_rIO9gbP7_iTm6YgR6Gue_EQfLhVf9HvfiIKxrYJCOv5fR0ybe814mZBrbGdYZRknTSREravX-S-aTQc5aTbsbuQAAAAGxQGFHAA")
+STRING1 = getenv("STRING_SESSION", "BAGuj-4AUE6oDTLC_i2xRwar1ErMg0wz6bSesAoiVWBfI9UeuoIxz87hWorVWExPlx_FIcoq5SNtSj45SNUFPzFZhAkplD1ABo7GjEAtv-Bfr3ffNc7NbNT_xHwc9tw5Zwwo9LcRYyugTxwWNKj7XRxLWjJL2Oc6MAMVN8PdEiDqayAJj6njYemWUZ0OIEMqHLt5b0zn9gBMSbdg1Obro6hnT7p8QT04KYzN8XnZ1sUjehPpdKC4apAWoT1P6l7vLdx51IvYfb3wDDefCJutWf-oWK8bujbIFjQFwrmlWYjjW-GC_Q69SWzyvP60d0tEteKvBkoOJRD-zCL4SVFYOd3ea3JtDgAAAAHNDSwcAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -105,7 +105,7 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/e5a809fe337adff6f4d4a.jpg"
+    "START_IMG_URL", "https://graph.org/file/869297aef3b5dd030ea33.jpg"
 )
 
 PING_IMG_URL = getenv(
