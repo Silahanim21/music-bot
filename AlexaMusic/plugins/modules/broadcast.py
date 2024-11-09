@@ -1,26 +1,82 @@
+# Copyright (C) 2024 by Alexa_Help @ Github, < https://github.com/TheTeamAlexa >
+# Subscribe On YT < Jankari Ki Duniya >. All rights reserved. © Alexa © Yukki.
+
+""""
+TheTeamAlexa is a project of Telegram bots with variety of purposes.
+Copyright (c) 2024 -present Team=Alexa <https://github.com/TheTeamAlexa>
+
+This program is free software: you can redistribute it and can modify
+as you want or you can collabe if you have new ideas.
+"""
+
+
 import asyncio
+from datetime import datetime, timedelta
 
 from pyrogram import filters
-from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
+from pyrogram.raw import types
 
-from BrandrdXMusic import app
-from BrandrdXMusic.misc import SUDOERS
-from BrandrdXMusic.utils.database import (
+import config
+from config import adminlist, chatstats, clean, userstats
+from pyrogram.enums import ChatMembersFilter
+from strings import get_command
+from AlexaMusic import app, userbot
+from AlexaMusic.misc import SUDOERS
+from AlexaMusic.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
+    get_particular_top,
     get_served_chats,
     get_served_users,
+    get_user_top,
+    is_cleanmode_on,
+    set_queries,
+    update_particular_top,
+    update_user_top,
 )
-from BrandrdXMusic.utils.decorators.language import language
-from BrandrdXMusic.utils.formatters import alpha_to_int
-from config import adminlist
+from AlexaMusic.utils.decorators.language import language
+from AlexaMusic.utils.formatters import alpha_to_int
+from config import OWNER_ID
 
+BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
+AUTO_DELETE = config.CLEANMODE_DELETE_MINS
+AUTO_SLEEP = 5
 IS_BROADCASTING = False
+cleanmode_group = 15
 
 
-BROADCAST_COMMAND = get_command("BROADCAST_COMMAND") 
+@app.on_raw_update(group=cleanmode_group)
+async def clean_mode(client, update, users, chats):
+    global IS_BROADCASTING
+    if IS_BROADCASTING:
+        return
+    try:
+        if not isinstance(update, types.UpdateReadChannelOutbox):
+            return
+    except:
+        return
+    if users:
+        return
+    if chats:
+        return
+    message_id = update.max_id
+    chat_id = int(f"-100{update.channel_id}")
+    if not await is_cleanmode_on(chat_id):
+        return
+    if chat_id not in clean:
+        clean[chat_id] = []
+    time_now = datetime.now()
+    put = {
+        "msg_id": message_id,
+        "timer_after": time_now + timedelta(minutes=AUTO_DELETE),
+    }
+    clean[chat_id].append(put)
+    await set_queries(1)
+
+
+@app.on_message(filters.command(BROADCAST_COMMAND) & SUDOERS)
 @language
 async def braodcast_message(client, message, _):
     global IS_BROADCASTING
