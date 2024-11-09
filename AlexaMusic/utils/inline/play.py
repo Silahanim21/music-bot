@@ -46,28 +46,6 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data="GetTimer",
             )
         ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(
-                text=" 𝖪𝖴𝖱𝖴𝖢𝖴 🔱", url=f"https://t.me/Ragnarben"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
-                callback_data=f"PanelMarkup {videoid}|{chat_id}",
-            ),
-            InlineKeyboardButton(text="𝖱𝖤𝖪𝖫𝖠𝖬.𝖠Ş 💌", url=f"https://t.me/sevimsiz_biri"),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"☀ 𝖣𝖴𝖸𝖴𝖱𝖴 ☀",
-                url=f"https://t.me/kumsaldestekkanal",
-            )
-        ],
     ]
     return buttons
 
