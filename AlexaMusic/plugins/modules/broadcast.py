@@ -20,7 +20,7 @@ from config import adminlist
 IS_BROADCASTING = False
 
 
-@app.on_message(filters.command(BROADCAST_COMMAND) & SUDOERS)
+BROADCAST_COMMAND = get_command("BROADCAST_COMMAND") 
 @language
 async def braodcast_message(client, message, _):
     global IS_BROADCASTING
