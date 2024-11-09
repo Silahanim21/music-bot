@@ -117,53 +117,43 @@ PLAYLIST_IMG_URL = getenv(
 )
 
 GLOBAL_IMG_URL = getenv(
-    "GLOBAL_IMG_URL",
-    "assets/Global.jpeg",
+    "GLOBAL_IMG_URL", None
 )
 
 STATS_IMG_URL = getenv(
-    "STATS_IMG_URL",
-    "assets/Stats.jpeg",
+    "STATS_IMG_URL", None
 )
 
 TELEGRAM_AUDIO_URL = getenv(
-    "TELEGRAM_AUDIO_URL",
-    "assets/Audio.jpeg",
+    "TELEGRAM_AUDIO_URL", None
 )
 
 TELEGRAM_VIDEO_URL = getenv(
-    "TELEGRAM_VIDEO_URL",
-    "assets/Video.jpeg",
+    "TELEGRAM_VIDEO_URL", None
 )
 
 STREAM_IMG_URL = getenv(
-    "STREAM_IMG_URL",
-    "assets/Stream.jpeg",
+    "STREAM_IMG_URL", None
 )
 
 SOUNCLOUD_IMG_URL = getenv(
-    "SOUNCLOUD_IMG_URL",
-    "assets/Soundcloud.jpeg",
+    "SOUNCLOUD_IMG_URL", None
 )
 
 YOUTUBE_IMG_URL = getenv(
-    "YOUTUBE_IMG_URL",
-    "assets/Youtube.jpeg",
+    "YOUTUBE_IMG_URL", None
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
-    "SPOTIFY_ARTIST_IMG_URL",
-    "assets/SpotifyArtist.jpeg",
+    "SPOTIFY_ARTIST_IMG_URL", None
 )
 
 SPOTIFY_ALBUM_IMG_URL = getenv(
-    "SPOTIFY_ALBUM_IMG_URL",
-    "assets/SpotifyAlbum.jpeg",
+    "SPOTIFY_ALBUM_IMG_URL", None
 )
 
 SPOTIFY_PLAYLIST_IMG_URL = getenv(
-    "SPOTIFY_PLAYLIST_IMG_URL",
-    "assets/SpotifyPlaylist.jpeg",
+    "SPOTIFY_PLAYLIST_IMG_URL", None
 )
 
 
