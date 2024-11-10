@@ -54,6 +54,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
+           )
+        ],
+        [
+InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
             )
         ],
     ]
@@ -96,8 +100,7 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
-            ),
-            InlineKeyboardButton(text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 💬", url=SUPPORT_GROUP),
+            )
         ],
     ]
     return buttons
