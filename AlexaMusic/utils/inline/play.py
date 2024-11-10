@@ -57,7 +57,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
            )
         ],
         ] 
-InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"],callback_data="close"),
+InlineKeyboardButton(text=_["CLOSE_BUTTON"],callback_data="close"),
             )
         ],
     ]
