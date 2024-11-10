@@ -111,7 +111,8 @@ def stream_markup(_, videoid, chat_id):
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 💬", url=SUPPORT_GROUP),
-        ],
+          )
+       ],
     [
     return buttons
 
@@ -124,6 +125,7 @@ def telegram_markup(_, chat_id):
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
+           )
         ],
     [
     return buttons
