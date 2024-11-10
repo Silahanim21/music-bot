@@ -51,20 +51,16 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="𝖮𝗐𝗇𝖾𝗋", url=f"https://t.me/Jankari_Ki_Duniya"),
-        ],
-        [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
-            ),
-            InlineKeyboardButton(text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 💬", url=SUPPORT_GROUP),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"𝖴𝗉𝖽𝖺𝗍𝖾𝗌 📢",
-                url=SUPPORT_CHANNEL,
             )
+        ],
+     ]
+  InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"],
+                callback_data=f"forceclose {query}|{user_id}",
+           )
         ],
     ]
     return buttons
