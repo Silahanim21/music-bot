@@ -56,13 +56,13 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             )
         ],
-     ]
+     [
   InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {query}|{user_id}",
            )
         ],
-    ]
+    [
     return buttons
 
 
@@ -89,7 +89,7 @@ def telegram_markup_timer(_, videoid, chat_id, played, dur):
             ),
             InlineKeyboardButton(text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 💬", url=SUPPORT_GROUP),
         ],
-    ]
+    [
     return buttons
 
 
@@ -112,7 +112,7 @@ def stream_markup(_, videoid, chat_id):
             ),
             InlineKeyboardButton(text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 💬", url=SUPPORT_GROUP),
         ],
-    ]
+    [
     return buttons
 
 
@@ -125,7 +125,7 @@ def telegram_markup(_, chat_id):
             ),
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
         ],
-    ]
+    [
     return buttons
 
 
