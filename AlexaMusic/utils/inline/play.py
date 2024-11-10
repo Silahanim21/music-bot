@@ -102,21 +102,11 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(
-                text="𝖪𝖴𝖱𝖴𝖢𝖴🔱", url=f"https://t.me/Ragnarben"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text="𝖱𝖤𝖪𝖫𝖠𝖬.𝖠Ş💌", url=f"https://t.me/sevimsiz_biri"),
         ],
-    ]
+     ]
     return buttons
 
 
