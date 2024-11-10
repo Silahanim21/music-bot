@@ -56,8 +56,8 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
            )
         ],
-        [
-InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
+        ]
+          InlineKeyboardButton(text= _["CLOSEMENU_BUTTON"], callback_data="close"),
             )
         ],
     ]
