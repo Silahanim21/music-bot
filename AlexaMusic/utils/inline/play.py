@@ -16,7 +16,7 @@ import random
 
 ## After Edits with Timer Bar
 
-      "▰▱▱▱▱▱▱▱▱",
+      "▰▱▱▱▱▱▱▱",
       "▰▰▱▱▱▱▱▱",
       "▰▰▰▱▱▱▱▱▱",
       "▰▰▰▰▱▱▱▱▱",
