@@ -1,17 +1,20 @@
-#
-# Copyright (C) 2024 by TheTeamVivek@Github, < https://github.com/TheTeamVivek >.
-#
-# This file is part of < https://github.com/TheTeamVivek/YukkiMusic > project,
-# and is released under the MIT License.
-# Please see < https://github.com/TheTeamVivek/YukkiMusic/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-import math
+# Copyright (C) 2024 by Alexa_Help @ Github, < https://github.com/TheTeamAlexa >
+# Subscribe On YT < Jankari Ki Duniya >. All rights reserved. © Alexa © Yukki.
 
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+""""
+TheTeamAlexa is a project of Telegram bots with variety of purposes.
+Copyright (c) 2024 -present Team=Alexa <https://github.com/TheTeamAlexa>
 
-from YukkiMusic.utils.formatters import time_to_seconds
+This program is free software: you can redistribute it and can modify
+as you want or you can collabe if you have new ideas.
+"""
+
+
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from config import SUPPORT_GROUP, SUPPORT_CHANNEL
+import random
+
+## After Edits with Timer Bar
 
 
 def get_progress_bar(percentage):
