@@ -16,32 +16,17 @@ import random
 
 ## After Edits with Timer Bar
 
-
-def get_progress_bar(percentage):
-    umm = math.floor(percentage)
-
-    if 0 < umm <= 10:
-        return "▰▱▱▱▱▱▱▱▱"
-    elif 10 < umm <= 20:
-        return "▰▰▱▱▱▱▱▱▱"
-    elif 20 < umm <= 30:
-        return "▰▰▰▱▱▱▱▱▱"
-    elif 30 < umm <= 40:
-        return "▰▰▰▰▱▱▱▱▱"
-    elif 40 < umm <= 50:
-        return "▰▰▰▰▰▱▱▱▱"
-    elif 50 < umm <= 60:
-        return "▰▰▰▰▰▰▱▱▱"
-    elif 60 < umm <= 70:
-        return "▰▰▰▰▰▰▰▱▱"
-    elif 70 < umm <= 80:
-        return "▰▰▰▰▰▰▰▰▱"
-    elif 80 < umm <= 90:
-        return "▰▰▰▰▰▰▰▰▰"
-    elif 90 < umm <= 100:
-        return "▰▰▰▰▰▰▰▰▰▰"
-    else:
-        return "▱▱▱▱▱▱▱▱▱"
+      "▰▱▱▱▱▱▱▱▱",
+      "▰▰▱▱▱▱▱▱",
+      "▰▰▰▱▱▱▱▱▱",
+      "▰▰▰▰▱▱▱▱▱",
+      "▰▰▰▰▰▱▱▱▱",
+      "▰▰▰▰▰▰▱▱▱",
+      "▰▰▰▰▰▰▰▱▱",
+      "▰▰▰▰▰▰▰▰▱",
+      "▰▰▰▰▰▰▰▰▰",
+      "▰▰▰▰▰▰▰▰▰▰",
+      "▱▱▱▱▱▱▱▱▱",
 
 
 def stream_markup_timer(_, videoid, chat_id, played, dur):
