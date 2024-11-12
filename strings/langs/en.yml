@@ -89,7 +89,7 @@ start_6 : "❗️ **Süper Grup Gerekli** ❗️\n\nLütfen **grubunuzu** **süp
 start_7 : "**Kara Listeye Alınmış Sohbet**\n\nBu sohbet, botu kullanmak için kara listeye alınmıştır. Sohbetinizi beyaz listeye almak için bir sudo kullanıcısına başvurun. Sudo kullanıcıları [liste]({0}) , aksi takdirde defolun."
 
 # Help
-help_1 : "Daha fazla bilgi için aşağıdaki butonlara tıklayın. Komutlar ve öğreticileri görmek istiyorsanız ( botun nasıl çalıştığı hakkında merak edilenler ve her şey ):-\n\nTüm komutlar aşşağıdaki butonlara basarak görebilirsiniz: /"
+help_1 : "Yardım istediğiniz kategoriyi seçin. .\n\n @GeceSohbettr'nden şikâyetiniz hakkında bilgi alın .\n\n Tüm komutlar şununla kullanılabilir: /"
 help_2 : "Yardım için PM'den bana ulaşın."
 
 # Settings
