@@ -59,11 +59,6 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     ]
     return buttons
 
-## By Anon
-close_keyboard = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="𝖢𝗅𝗈𝗌𝖾", callback_data="🗑️ Menüyü kapat")]]
-)
-
 def telegram_markup_timer(_, videoid, chat_id, played, dur):
     bar = random.choice(selections)
     buttons = [
