@@ -98,7 +98,7 @@ async def gen_thumb(videoid):
         )
         draw.text(
             (600, 150),
-            "MÜZİK BAŞLADI",
+            "NOW PLAYING",
             fill="white",
             stroke_width=3,
             stroke_fill="black",
@@ -127,19 +127,19 @@ async def gen_thumb(videoid):
                 )
         draw.text(
             (600, 450),
-            f"görüntüleme: {views[:23]}",
+            f"Views : {views[:23]}",
             (255, 255, 255),
             font=arial,
         )
         draw.text(
             (600, 500),
-            f"süre : {duration[:23]} Mins",
+            f"Duration : {duration[:23]} Mins",
             (255, 255, 255),
             font=arial,
         )
         draw.text(
             (600, 550),
-            f" tim : kumsal fed",
+            f"Owner : Jankari Ki Duniya",
             (255, 255, 255),
             font=arial,
         )
@@ -214,7 +214,7 @@ async def gen_qthumb(videoid):
         para = textwrap.wrap(title, width=30)
         j = 0
         draw.text(
-            (5, 5), f"Kumsal müzik TR", fill="white", font=name_font
+            (5, 5), f"Alexa MusicBot", fill="white", font=name_font
         )
         draw.text(
             (600, 150),
@@ -247,19 +247,19 @@ async def gen_qthumb(videoid):
                 )
         draw.text(
             (600, 450),
-            f"görüntüleme : {views[:23]}",
+            f"Views : {views[:23]}",
             (255, 255, 255),
             font=arial,
         )
         draw.text(
             (600, 500),
-            f"süre : {duration[:23]} Mins",
+            f"Duration : {duration[:23]} Mins",
             (255, 255, 255),
             font=arial,
         )
         draw.text(
             (600, 550),
-            f"tim ekibi kumsal federasyonu",
+            f"Owner : Jankari Ki Duniya",
             (255, 255, 255),
             font=arial,
         )
