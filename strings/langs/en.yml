@@ -79,14 +79,16 @@ admin_34 : "İleri sarma başarısız oldu."
 
 # Bot 
 
+
 # Start
 start_1 : "Beni {0}'e davet ettiğiniz için teşekkürler.\n{1} çalışıyor.\n\nHerhangi bir yardım için destek grubumuza veya kanalımıza göz atın.."
-start_2 : "Merhaba, Benim adım {0}.\n\nBazı kullanışlı özelliklere sahip bir telegram müzik botuyum. Youtube, Spotify, Resso, AppleMusic , Soundcloud vb. Destekleyici platformlar\n\nBeni gruplarınıza eklemekten çekinmeyin.""
+start_2 : "Merhaba, Benim adım {0}.\n\nBazı kullanışlı özelliklere sahip bir telegram müzik botuyum. Youtube, Spotify, Resso, AppleMusic , Soundcloud vb. Destekleyici platformlar\n\nBeni gruplarınıza eklemekten çekinmeyin."
 start_3 : "Hoş Geldiniz {0}\n\nÇalışmak için herhangi bir **yönetici iznine** ihtiyacım yok ( isteninceye kadar).\n\nAsistan Kullanıcı Adı:- @{1}\nAsistan Kimliği:- {2}"
 start_4 : "{0}'s Owner[{1}] sohbetinize katıldı."
 start_5 : "{0} adlı kullanıcının Sudo Kullanıcısının[{1}] bir üyesi sohbetinize az önce katıldı."
 start_6 : "❗️ **Süper Grup Gerekli** ❗️\n\nLütfen **grubunuzu** **süper gruba** dönüştürün ve sonra beni tekrar ekleyin.\n\n**Üst grup nasıl yapılır?**\n✅ Grubunuzun sohbet geçmişini oluşturun **görünür** yapın önce."
 start_7 : "**Kara Listeye Alınmış Sohbet**\n\nBu sohbet, botu kullanmak için kara listeye alınmıştır. Sohbetinizi beyaz listeye almak için bir sudo kullanıcısına başvurun. Sudo kullanıcıları [liste]({0}) , aksi takdirde defolun."
+
 
 # Help
 help_1 : "Yardım istediğiniz kategoriyi seçin. .\n\n @GeceSohbettr'nden şikâyetiniz hakkında bilgi alın .\n\n Tüm komutlar şununla kullanılabilir: /"
