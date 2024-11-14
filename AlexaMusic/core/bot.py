@@ -39,7 +39,7 @@ class AlexaBot(Client):
         self.mention = get_me.mention
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "» Music bot başlatıldı, asistan bekleniyor..."
+                config.LOG_GROUP_ID, "»𝖣İ𝖹𝖤𝖫𝖤𝖱 𝖦𝖴𝖭𝖢𝖤𝖫𝖫𝖤𝖭𝖣İ 𝖣𝖮𝖲𝖸𝖠𝖫𝖠𝖱 𝖸𝖤𝖭İ𝖫𝖤𝖭𝖣İ 𝖳Ü𝖬 𝖣𝖮𝖭𝖠𝖭𝖨𝖬𝖫𝖠𝖱 𝖠𝖪𝖳İ𝖥 𝖠𝖲İ𝖲𝖳𝖠𝖭 𝖱𝖤𝖲𝖳 𝖤𝖣İ𝖫İ𝖸𝖮𝖱✅..."
             )
         except:
             LOGGER(__name__).error(
