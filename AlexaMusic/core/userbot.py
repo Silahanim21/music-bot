@@ -106,7 +106,7 @@ class Userbot(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Asistan başlatıldı, şimdi Telegram video sohbetlerinde müziğin keyfini çıkarma zamanı ! "
+                    f"asistan istemcisi aktif ✅ ! "
                 )
                 sys.exit()
             get_me = await self.two.get_me()
