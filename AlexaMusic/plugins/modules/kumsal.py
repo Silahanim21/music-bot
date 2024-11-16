@@ -63,7 +63,7 @@ Aynur = (
 )
 
 sahip = (
-"@candyy_king **Sana sesleniyorlarr**",
+"@Ragnarben **Sana sesleniyorlarr**",
 "**Adamdır** 🌹",
 "**Adamımmmm**",
 "**Sahibime mi sesleniyorsun?**",
@@ -603,7 +603,7 @@ kumsal = (
 "**yüreği yeter 🤗**",
 "**zeki adamdır ** 😂",
 "**@kumsalmuzikk @kumsalmuzikbot Sahibidir.**",
-"**Patron Senin ismin Geçiyor @candyy__king**",
+"**Patron Senin ismin Geçiyor @candyy_king**",
 "**@candyy_king**",
 )
 
@@ -982,6 +982,27 @@ akşamlar = (
 "**Yeni mi geldin?**",
 "**Nerdesin sen ya gözümüz yollarda kaldı**",
 )
+
+mehmet = (
+"**yaratıcımı rahatsız etme**",
+"**@candyy_king telegram güzeli seni çağırıyor**",
+"**canddy benim kocam**",
+"**sevgilimden uzak dur?**",
+"**Senin eşeğinim** 😂",
+"**Eşeksin**",
+"**Evet sensin eşek**",
+"**İkimizde**",
+)
+
+@candyy_king = (
+"**benim aşkım Mehmet**,
+"**kocamı rahatsız etme",
+"**Mehmet beni prenses peri sanıyor"**,
+)
+
+baban = (
+"**benim babam 👉 @Ragnarben**",
+"**baba seni çağırıyorlar @Ragnarben**",
 
 commandList = [
     "zar",
