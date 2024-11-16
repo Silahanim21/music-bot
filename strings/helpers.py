@@ -59,24 +59,27 @@ HELP_3 = """😉<u>BOT KOMUTLARI:</u>
 /song [parça adı] veya [yt bağlantısı] : Herhangi bir YouTube parçasını ses veya video formatında indirir.
 /player : Etkileşimli bir oynatıcı paneli alır.
 /sıra : Kuyrukta bekleyen parçaların listesini gösterir.
-Powered by @esilabotbilgilendirme, @sorundestekk @sohbet_siir."""
+."""
 
-HELP_4 = """😴<u>**Ekstra Komutlar:**</u>
+HELP_4 = """😴<u>**sohbet özelliği:**</u>
 
-/start : Müzik botunu başlatır.
-/help : Komutların açıklamalarıyla birlikte yardım menüsünü al.
-/ping : Botun ping değerini ve sistem istatistiklerini gösterir.
+/chatmode - sohbet özelliğini aktif eder
+
+/id grup ve ya kullanıcı idini gosterir
+
+/indir şarkı indirir
 
 🧐<u>**Grup Ayarları:**</u>
 /settings : Grubun ayarlarını etkileşimli çevrimiçi menü ile gösterir.
 """
 
-HELP_5 = """<u>EXTRA KOMUTLAR:</u>**
-#sohbet bot özelliğini 
-/chatmode - sohbet özelliğini aktif eder
+HELP_5 = """<u>doğruluk cesaret:</u>**
 
-#mani sözler
 /mani - mani sözü atar
+
+/d - doğruluk sorusu sorar
+/c - cesaret sorusu sorar
+
 
 """
 
@@ -85,15 +88,23 @@ HELP_7 = """💌**<u>eğlenceli komutlar:</u>**
 /slap - şaplak atar
 /eros - Eros atar
 /saka - şaka yapar
-
-
+/oner - tavsiye verir
+/para - yazı tura atar
+/basket - basket atar
+/futbol - kale şut atar
+/bowling - bowling atar
+/zar - zar atar
+/slot - slot cevirir
+/dart - dart atar
 """
 
-HELP_8 = """😉**<u>BOT KOMUTLARI:</u>**
+HELP_8 = """😉**<u>etiket komutları:</u>**
 
 » /tag - tek tek etiketler.
 
 » /utag - Çoklu etiketler.
 
      örnek /utag selam veya /tag selam
+
+/cancel - etiketlemeyi durdurur.
 """
