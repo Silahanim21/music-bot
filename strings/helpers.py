@@ -144,7 +144,7 @@ Powered © by """
 
 HELP_8 = """<u> etiket komutları:</u>**
 
-» /tag - Tek tek etiketler.
+» /tag - tek tek etiketler.
 
 » /utag - Çoklu etiketler.
 
