@@ -119,7 +119,7 @@ sus = (
 "**Beni susturamazsın kiii**",
 )
 
-Mustafa = (
+mustafa = (
 "**@Ragnarben baba** 🫢",
 "**benim babam @Ragnarben** 🫠",
 "**Rangar** ❣️",
