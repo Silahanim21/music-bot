@@ -82,7 +82,7 @@ admin_34 : "İleri sarma başarısız oldu."
 
 # Start
 start_1 : "нєу, ɪ ᴀᴍ {0} 🥀.\n\n➻ Ben bazı yararlı özelliklere sahip bir Telegram akış botuyum.\n\nDesteklenen platformlar: YouTube, Spotify, SoundCloud vb.\n\n๏ Beni gruplarınıza eklemekten çekinmeyin."
-start_2 : "𝖬𝖾𝗋𝗁𝖺𝖻𝖺,𝖻𝖾𝗇 {0}.\n\n➻ 𝖻𝖾𝗇 𝖻𝖺𝗓ı 𝗒𝖺𝗋𝖺𝗋𝗅ı ö𝗓𝖾𝗅𝗅𝗂𝗄𝗅𝖾𝗋𝖾 𝗌𝖺𝗁𝗂𝗉 𝖻𝗂𝗋 𝗍𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖺𝗄ış 𝖻𝗈𝗍𝗎𝗒𝗎𝗆.\n\nAsistan kullanıcı adı:- @{1}\nAsistan ID:- {2}"
+start_2 : "Merhaba Benim Adım {0}.\n\n➻ 𝖻𝖾𝗇 𝖻𝖺𝗓ı 𝗒𝖺𝗋𝖺𝗋𝗅ı ö𝗓𝖾𝗅𝗅𝗂𝗄𝗅𝖾𝗋𝖾 𝗌𝖺𝗁𝗂𝗉 𝖻𝗂𝗋 𝗍𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖺𝗄ış 𝖻𝗈𝗍𝗎𝗒𝗎𝗆.\n\nAsistan kullanıcı adı:- @{1}\nAsistan ID:- {2}"
 start_3 : "{0} sahibi {1} sohbetinize katıldı."
 start_4 : "{0} sudo kullanıcısı {1} sohbetinize katıldı."
 start_5 : "🦸 SÜPERGRUP GEREKLİ 🦸\n\nLütfen grubunuzu süpergrup'a dönüştürün ve ardından beni tekrar ekleyin.\n\nSüpergrup nasıl yapılır?\n🥱 Grubunuzun sohbet geçmişini bir kez görünür yapın."
