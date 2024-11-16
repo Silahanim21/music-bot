@@ -142,19 +142,10 @@ HELP_7 = """💌**<u>Burada yeni özellikleri bulabilirsiniz:</u>**
 /verify : Alexa veritabanında kendinizi doğrulayın.
 Powered © by """
 
-HELP_8 = """💰**<u>Yayın Aboneliği Özelliği:</u>**
+HELP_8 = """💰**<u>  ✶ Etiket Komutları:</u>**
 
-Artık bizden aylık ve haftalık yayın aboneliği satın alabilirsiniz. Haftalık 3 ve aylık 14 yayın dayanıklılığı, ancak yayın gönderme sınırı iki gün sonrasına kadar geçerlidir.
+» /tag - Tek tek etiketler.
 
-**Sadece Sahip**
-/addweekly [Kullanıcı ID] : Kullanıcıyı haftalık yayın aboneliğine ekler.
-/addmonthly [Kullanıcı ID] : Kullanıcıyı aylık yayın aboneliğine ekler.  
-/removesub [Kullanıcı ID] : Kullanıcıyı yayın aboneliğinden çıkarır.
-/checksubscription [Kullanıcı ID] : Kullanıcının aboneliğini kontrol eder, kalan günleri ve yayınları gösterir.
-/substats : Toplam abone sayısını ve kullanıcı ID'leri ile abonelik türünü kontrol eder, ayrıca yayın sayısını gösterir.
-/subscription_alert : Kalan günleri ile birlikte aboneye uyarı mesajı göndermek için.
+» /utag - Çoklu etiketler.
 
-**Herkes Kullanabilir**
-/mysubscription : Kalan günler ve yayın sayısıyla birlikte aboneliğinizi kontrol edebilirsiniz.
-/paidbroadcast : Tüm kullanıcılara ve gruplara aynı anda yayın mesajı gönderir, eğer aktif bir aboneliğiniz varsa.
-"""
+örnek /utag selam veya /tag selam
