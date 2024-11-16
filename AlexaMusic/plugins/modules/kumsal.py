@@ -119,6 +119,23 @@ sus = (
 "**Beni susturamazsın kiii**",
 )
 
+Mustafa = (
+"**@Ragnarben baba** 🫢",
+"**benim babam @Ragnarben** 🫠",
+"**Rangar** ❣️",
+"**He** ❤️",
+"**baba Aa seni gördüğüme mutlu oldum nasılsın?** 🤓",
+"**Ooo baba naber yaa ?** 🙄",
+"**Evet babam benimm** 🫠",
+"**Hahaayt benim babam buyruuun** ❤️",
+"**Heeevet benim babam buyruuun**",
+"**Evet canım babam beni çağırdın**",
+"**baba Galiba beni çağırdın** ❤️",
+"**Efendim??** ❤️",
+"❤️ **Buyuuur**",
+"**Ben olmasam ne yapacaksınn bee** ❤️",
+)
+
 he = (
 "**Sana he**",
 "**Ne hee**",
