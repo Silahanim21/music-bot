@@ -71,76 +71,23 @@ HELP_4 = """😴<u>**Ekstra Komutlar:**</u>
 /settings : Grubun ayarlarını etkileşimli çevrimiçi menü ile gösterir.
 """
 
-HELP_5 = """<u>ᴀᴅᴅ & ʀᴇᴍᴏᴠᴇ sᴜᴅᴏᴇʀs:</u>**
-/addsudo [kullanıcı adı veya bir kullanıcıya yanıt ver]
-/delsudo [kullanıcı adı veya bir kullanıcıya yanıt ver]
+HELP_5 = """<u>EXTRA KOMUTLAR:</u>**
+#sohbet bot özelliğini 
+/chatmode - sohbet özelliğini aktif eder
 
-🥶**<u>HEROKU:</u>**
-/usage : Kullanım verilerini gösterir.
+#mani sözler
+/mani - mani sözü atar
 
-🤯**<u>Konfigürasyon Değişkenleri:</u>**
-/get_var: Heroku veya .env'den bir konfigürasyon değişkenini alır.
-/del_var: Heroku veya .env'den bir konfigürasyon değişkenini siler.
-/set_var [var adı] [değer]: Heroku veya .env'de bir konfigürasyon değişkenini ayarlar veya günceller.
-
-🤖**<u>Bot Komutları:</u>**
-/restart: Botunuzu yeniden başlatır.
-/update: Botu, akış deposundan günceller.
-/speedtest: Botun sunucu hızını kontrol eder.
-/maintenance [enable/disable]
-/logger [enable/disable]: Bot, gerçekleşen aktiviteleri kaydetmeye başlar.
-/get_log [satır sayısı]: Botunuzun günlüklerini alır (varsayılan değer 100 satırdır).
-/autoend [enable|disable]: Eğer kimse dinlemiyorsa akışı otomatik olarak sona erdirir.
-
-🤑**<u>İstatistik Komutları:</u>**
-/activevoice: Bot üzerindeki aktif sesli sohbetlerin listesini gösterir.
-/activevideo: Bot üzerindeki aktif video sohbetlerin listesini gösterir.
-/stats: Botun mevcut istatistiklerini gösterir.
-
-😒**<u>Karartılmış Sohbet:</u>**
-/blacklistchat [sohbet ID]: Bir sohbeti botu kullanmaktan yasaklar.
-/whitelistchat [sohbet ID]: Yasaklı sohbeti beyaz listeye ekler.
-/blacklistedchat: Yasaklı sohbetlerin listesini gösterir.
-
-😤**<u>Kullanıcıları Engelle:</u>**
-/block [kullanıcı adı veya bir kullanıcıya yanıt]: Kullanıcıyı görmezden gelmeye başlar, böylece bot komutlarını kullanamaz.
-/unblock [kullanıcı adı veya bir kullanıcıya yanıt]: Engellenen kullanıcıyı engelden çıkarır.
-/blockedusers: Engellenen kullanıcıların listesini gösterir.
-
-🤬**<u>Global Ban Özelliği:</u>**
-/gban [kullanıcı adı veya bir kullanıcıya yanıt]: Kullanıcıyı tüm sunuculardan global olarak yasaklar ve botu kullanmasını engeller.
-/ungban [kullanıcı adı veya bir kullanıcıya yanıt]: Global olarak yasaklanan kullanıcıyı yasaktan çıkarır.
-/gbannedusers: Global olarak yasaklanmış kullanıcıların listesini gösterir.
-
-🎥**<u>Video Sohbet Modu:</u>**
-/set_video_limit [sohbet sayısı]: Bot üzerinde izin verilen maksimum video sohbet sayısını ayarlar. [Varsayılan - 3]
-/videomode [indir|m3u8]: Eğer indirme modu etkinleştirilirse, bot parçaları oynatmak yerine indirecektir.
-
-💔**<u>Özel Bot:</u>**
-/authorize [sohbet ID'si]: Bir sohbetin botu kullanmasına izin verir.
-/unauthorize [sohbet ID'si]: İzin verilen sohbeti devre dışı bırakır.
-/authorized: Tüm izin verilen sohbetlerin listesini gösterir.
-
-🍒**<u>Yayın Özelliği:</u>**
-/broadcast [mesaj veya bir mesaja yanıt]: Bir mesajı botun hizmet verdiği sohbetlere yayınlar.
-
-<u>Yayın Modları:</u>
-**-pin** : Yayınladığınız mesajları hizmet verilen sohbetlerde sabitler.
-**-pinloud** : Yayınladığınız mesajı hizmet verilen sohbetlerde sabitler ve üyelere bildirim gönderir.
-**-user** : Mesajı botunuzu başlatan kullanıcılara yayınlar.
-**-assistant** : Mesajınızı botun asistan hesabından yayınlar.
-**-nobot** : Botun mesajı yayınlamasını zorla engeller.
-
-**Örnek**: `/broadcast -user -assistant -pin Yayın Testi`
 """
 
-HELP_7 = """💌**<u>Burada yeni özellikleri bulabilirsiniz:</u>**
+HELP_7 = """💌**<u>eğlenceli komutlar:</u>**
 
-/alive : Şimdi Alexa Müzik Botu'nun çalışıp çalışmadığını kontrol edebilirsiniz.
-/id : Kullanıcı ve sohbet ID'sini kontrol etmek için.
-/gcast -user -assistant -pin Yayın Testi
-/verify : Alexa veritabanında kendinizi doğrulayın.
-Powered © by """
+/slap - şaplak atar
+/eros - Eros atar
+/saka - şaka yapar
+
+
+"""
 
 HELP_8 = """<u> etiket komutları:</u>**
 
