@@ -105,11 +105,11 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", None
+    "START_IMG_URL", "https://envs.sh/5hH.jpg"
 )
 
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", None
+    "PING_IMG_URL", ""
 )
 
 PLAYLIST_IMG_URL = getenv(
@@ -117,43 +117,43 @@ PLAYLIST_IMG_URL = getenv(
 )
 
 GLOBAL_IMG_URL = getenv(
-    "GLOBAL_IMG_URL", None
+    "GLOBAL_IMG_URL", "https://envs.sh/5hH.jpg"
 )
 
 STATS_IMG_URL = getenv(
-    "STATS_IMG_URL", None
+    "STATS_IMG_URL", "https://envs.sh/5hH.jpg"
 )
 
 TELEGRAM_AUDIO_URL = getenv(
-    "TELEGRAM_AUDIO_URL", None
+    "TELEGRAM_AUDIO_URL", "https://envs.sh/5hH.jpg"
 )
 
 TELEGRAM_VIDEO_URL = getenv(
-    "TELEGRAM_VIDEO_URL", None
+    "TELEGRAM_VIDEO_URL", "https://envs.sh/5hH.jpg"
 )
 
 STREAM_IMG_URL = getenv(
-    "STREAM_IMG_URL", None
+    "STREAM_IMG_URL", "https://envs.sh/5hH.jpg"
 )
 
 SOUNCLOUD_IMG_URL = getenv(
-    "SOUNCLOUD_IMG_URL", None
+    "SOUNCLOUD_IMG_URL", "https://envs.sh/5hH.jpg"
 )
 
 YOUTUBE_IMG_URL = getenv(
-    "YOUTUBE_IMG_URL", None
+    "YOUTUBE_IMG_URL", "https://envs.sh/5hH.jpg"
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
-    "SPOTIFY_ARTIST_IMG_URL", None
+    "SPOTIFY_ARTIST_IMG_URL", "https://envs.sh/5hH.jpg"
 )
 
 SPOTIFY_ALBUM_IMG_URL = getenv(
-    "SPOTIFY_ALBUM_IMG_URL", None
+    "SPOTIFY_ALBUM_IMG_URL", "https://envs.sh/5hH.jpg"
 )
 
 SPOTIFY_PLAYLIST_IMG_URL = getenv(
-    "SPOTIFY_PLAYLIST_IMG_URL", None
+    "SPOTIFY_PLAYLIST_IMG_URL", "https://envs.sh/5hH.jpg"
 )
 
 
