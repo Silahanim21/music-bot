@@ -36,19 +36,31 @@
 </p>
 
 ¶────┈┈┈┄┄╌╌╌╌─────┈┈┈┄┄╌╌╌╌┄┄
+<p align="center">
 ⏳ Genel Komutlar
 <p align="center">
 /oynat •> ɪsᴛᴇᴅɪɢɪɴ sᴀʀᴋɪʏɪ ᴏʏɴᴀᴛ
+<p align="center">
 /bul •> ɪsᴛᴇᴅɪɢɪɴ sᴀʀᴋɪʏɪ ɪɴᴅɪʀ
+<p align="center">
 /durdur •> sᴀʀᴋɪʏɪ ᴅᴜʀᴅᴜʀ
+<p align="center">
 /devam •> sᴀʀᴋɪʏɪ sᴜʀᴅᴜʀ
+<p align="center">
 /atla •> sᴀʀᴋɪʏɪ ᴀᴛʟᴀʀ
+<p align="center">
 /son •> sᴀʀᴋɪʏɪ sᴏɴʟᴀɴᴅɪʀ
+<p align="center">
 /reload •> ᴀᴅᴍɪɴ ʟɪsᴛᴇsɪɴɪ ɢᴜɴᴄᴇʟʟᴇʀ
+<p align="center">
 /katil •> ᴀsɪsᴛᴀɴ ɢʀᴜʙᴀ ᴋᴀᴛɪʟɪʀ
+<p align="center">
 /ayril •> ᴀsɪsᴛᴀɴ ɢʀʏʙᴛᴀɴ ᴀʏʀɪʟɪʀ
+<p align="center">
 /auth •> ᴋᴜʟʟᴀᴄɪʏɪ ʏᴇᴛᴋɪʟᴇɴᴅɪʀɪʀ
+<p align="center">
 /unauth •> ᴋᴜʟʟᴀɴɪᴄɪʏɪ ʏᴇᴛᴋɪsɪᴢʟᴇsᴛɪʀɪʀ
+<p align="center">
 /clean •> ʙᴏᴛᴜɴ ɪᴄɪɴᴅᴇᴋɪ ᴏɴᴇᴍsɪᴢ ᴠᴇʀɪʟᴇʀɪ ᴛᴇᴍɪᴢʟᴇʀ
 
 
