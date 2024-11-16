@@ -996,8 +996,8 @@ mehmet = (
 
 memo = (
 "**benim aşkım Mehmet**",
-"**kocamı rahatsız etme",
-"**Mehmet beni prenses peri sanıyor"**,
+"**kocamı rahatsız etme**",
+"**Mehmet beni prenses peri sanıyor**",
 )
 
 baban = (
