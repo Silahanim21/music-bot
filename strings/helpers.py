@@ -142,7 +142,7 @@ HELP_7 = """💌**<u>Burada yeni özellikleri bulabilirsiniz:</u>**
 /verify : Alexa veritabanında kendinizi doğrulayın.
 Powered © by """
 
-HELP_8 = """💰**<u>✶Etiket Komutları:</u>**
+HELP_8 = """💰**<u>Etiket Komutları:</u>**
 
 » /tag - Tek tek etiketler.
 
