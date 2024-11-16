@@ -95,4 +95,5 @@ HELP_8 = """😉**<u>BOT KOMUTLARI:</u>**
 
 » /utag - Çoklu etiketler.
 
-örnek /utag selam veya /tag selam
+     örnek /utag selam veya /tag selam
+"""
