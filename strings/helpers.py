@@ -89,7 +89,7 @@ HELP_7 = """💌**<u>eğlenceli komutlar:</u>**
 
 """
 
-HELP_8 = """😉<u>BOT KOMUTLARI:</u>
+HELP_8 = """😉**<u>BOT KOMUTLARI:</u>**
 
 » /tag - tek tek etiketler.
 
