@@ -1003,6 +1003,7 @@ mehmet = (
 baban = (
 "**benim babam 👉 @Ragnarben**",
 "**baba seni çağırıyorlar @Ragnarben**",
+)
 
 commandList = [
     "zar",
