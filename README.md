@@ -35,7 +35,7 @@
 <a href="https://t.me/kumsaldestekkanal"><img src="https://img.shields.io/badge/-destek%20kanal-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
-────┈┈┈┄┄╌╌╌╌┄┄┈┈┈────────┈┈┈┄┄╌╌╌╌┄┄
+────┈┈┈┄┄╌╌╌╌─────┈┈┈┄┄╌╌╌╌┄┄
 ⏳ Genel Komutlar
 <p align="center">
 /oynat •> ɪsᴛᴇᴅɪɢɪɴ sᴀʀᴋɪʏɪ ᴏʏɴᴀᴛ
