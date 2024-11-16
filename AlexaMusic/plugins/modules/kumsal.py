@@ -994,8 +994,8 @@ mehmet = (
 "**İkimizde**",
 )
 
-candyy_king = (
-"**benim aşkım Mehmet**,
+@candyy_king = (
+"**benim aşkım Mehmet**",
 "**kocamı rahatsız etme",
 "**Mehmet beni prenses peri sanıyor"**,
 )
