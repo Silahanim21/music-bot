@@ -1,7 +1,7 @@
+◆━━━━━━━━━━▣✦▣━━━━━━━━━━━◆
 𝖺𝗅𝖾𝗑𝖺 𝖾𝗄𝗂𝖻𝗂𝗇𝖾 𝗍𝖾ş𝖾𝗄𝗄ü𝗋 𝖾𝖽𝖾𝗋𝗂𝗓 
-
 <h2 align="center">
-    ──「 kumsal ダ music 」──
+🎧━╬ﮩ٨ـﮩﮩ٨ـ𝖪𝖴𝖬𝖲𝖠𝖫 ﮩ٨ـﮩﮩ٨ـ╬━🎧
 </h2>
 
 <p align="center">
@@ -34,4 +34,19 @@
 <a href="https://t.me/kumsaldestekkanal"><img src="https://img.shields.io/badge/-destek%20kanal-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
-Bu bot hizmet amaçlı yapılmıştir
+────┈┈┈┄┄╌╌╌╌┄┄┈┈┈────────┈┈┈┄┄╌╌╌╌┄┄
+⏳ Genel Komutlar
+/oynat •> ɪsᴛᴇᴅɪɢɪɴ sᴀʀᴋɪʏɪ ᴏʏɴᴀᴛ
+/bul •> ɪsᴛᴇᴅɪɢɪɴ sᴀʀᴋɪʏɪ ɪɴᴅɪʀ
+/durdur •> sᴀʀᴋɪʏɪ ᴅᴜʀᴅᴜʀ
+/devam •> sᴀʀᴋɪʏɪ sᴜʀᴅᴜʀ
+/atla •> sᴀʀᴋɪʏɪ ᴀᴛʟᴀʀ
+/son •> sᴀʀᴋɪʏɪ sᴏɴʟᴀɴᴅɪʀ
+/reload •> ᴀᴅᴍɪɴ ʟɪsᴛᴇsɪɴɪ ɢᴜɴᴄᴇʟʟᴇʀ
+/katil •> ᴀsɪsᴛᴀɴ ɢʀᴜʙᴀ ᴋᴀᴛɪʟɪʀ
+/ayril •> ᴀsɪsᴛᴀɴ ɢʀʏʙᴛᴀɴ ᴀʏʀɪʟɪʀ
+/auth •> ᴋᴜʟʟᴀᴄɪʏɪ ʏᴇᴛᴋɪʟᴇɴᴅɪʀɪʀ
+/unauth •> ᴋᴜʟʟᴀɴɪᴄɪʏɪ ʏᴇᴛᴋɪsɪᴢʟᴇsᴛɪʀɪʀ
+/clean •> ʙᴏᴛᴜɴ ɪᴄɪɴᴅᴇᴋɪ ᴏɴᴇᴍsɪᴢ ᴠᴇʀɪʟᴇʀɪ ᴛᴇᴍɪᴢʟᴇʀ
+
+
