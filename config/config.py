@@ -140,9 +140,6 @@ SOUNCLOUD_IMG_URL = getenv(
     "SOUNCLOUD_IMG_URL", "https://envs.sh/5hH.jpg"
 )
 
-YOUTUBE_IMG_URL = getenv(
-    "YOUTUBE_IMG_URL", "https://envs.sh/5hH.jpg"
-)
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
     "SPOTIFY_ARTIST_IMG_URL", "https://envs.sh/5hH.jpg"
@@ -252,15 +249,6 @@ if SOUNCLOUD_IMG_URL:
                 "[ERROR] - Your SOUNCLOUD_IMG_URL url is wrong. Please ensure that it starts with https://"
             )
             sys.exit()
-
-if YOUTUBE_IMG_URL:
-    if YOUTUBE_IMG_URL != "assets/Youtube.jpeg":
-        if not re.match("(?:http|https)://", YOUTUBE_IMG_URL):
-            print(
-                "[ERROR] - Your YOUTUBE_IMG_URL url is wrong. Please ensure that it starts with https://"
-            )
-            sys.exit()
-
 
 if TELEGRAM_VIDEO_URL:
     if TELEGRAM_VIDEO_URL != "assets/Video.jpeg":
