@@ -242,6 +242,15 @@ if STREAM_IMG_URL:
             sys.exit()
 
 
+if YOUTUBE_IMG_URL:
+    if YOUTUBE_IMG_URL != "assets/Youtube.jpeg":
+        if not re.match("(?:http|https)://", YOUTUBE_IMG_URL):
+            print(
+                "[ERROR] - Your YOUTUBE_IMG_URL url is wrong. Please ensure that it starts with https://"
+            )
+            sys.exit()
+
+
 if SOUNCLOUD_IMG_URL:
     if SOUNCLOUD_IMG_URL != "assets/Soundcloud.jpeg":
         if not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL):
