@@ -40,7 +40,7 @@ def clear(text):
     return title.strip()
 
 
-async def App.send_message:
+async def App.send_message(videoid):
     if os.path.isfile(f"cache/{videoid}.png"):
         return f"cache/{videoid}.png"
 
