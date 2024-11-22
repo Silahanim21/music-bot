@@ -82,7 +82,7 @@ admin_34 : "İleri sarma başarısız oldu."
 
 # Start
 start_1 : "нєу, ɪ ᴀᴍ {0} 🥀.\n\n➻ Ben bazı yararlı özelliklere sahip bir Telegram akış botuyum.\n\nDesteklenen platformlar: YouTube, Spotify, SoundCloud vb.\n\n๏ Beni gruplarınıza eklemekten çekinmeyin."
-start_2 : "Merhaba, Benim adım {0}.\n\nBazı kullanışlı özelliklere sahip bir telegram müzik botuyum. Youtube, Spotify, Resso, AppleMusic , Soundcloud vb. Destekleyici platformlar\n\nBeni gruplarınıza eklemekten çekinmeyin."
+start_2 : "ᴍᴇʀʜᴀʙᴀ, ʙᴇɴɪᴍ ᴀᴅɪᴍ {0}.\n\nʙᴀᴢɪ ᴋᴜʟʟᴀɴɪşʟɪ ᴏ̈ᴢᴇʟʟɪᴋʟᴇʀᴇ sᴀʜɪᴘ ʙɪʀ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜᴢɪᴋ ʙᴏᴛᴜʏᴜᴍ. ʏᴏᴜᴛᴜʙᴇ, sᴘᴏᴛɪғɪʏ, ʀᴇssᴏ, ᴀᴘᴘʟᴇᴍᴜsɪᴄ , sᴏɴᴄʟᴏᴜᴅ ᴠʙ. ᴅᴇsᴛᴇᴋʟᴇʏɪᴄɪ ᴘʟᴀᴛғᴏʀᴍʟᴀʀ\n\nʙᴇɴɪ ɢʀᴜᴘʟᴀʀɪɴɪᴢᴀ ᴇᴋʟᴇᴍᴇᴋᴛᴇɴ ᴄ̧ᴇᴋɪɴᴍᴇʏɪɴ."
 start_3 : "{0} sahibi {1} sohbetinize katıldı."
 start_4 : "{0} sudo kullanıcısı {1} sohbetinize katıldı."
 start_5 : "🦸 SÜPERGRUP GEREKLİ 🦸\n\nLütfen grubunuzu süpergrup'a dönüştürün ve ardından beni tekrar ekleyin.\n\nSüpergrup nasıl yapılır?\n🥱 Grubunuzun sohbet geçmişini bir kez görünür yapın."
@@ -159,7 +159,7 @@ cplay_5 : "Yalnızca Kanallar Desteklenir."
 cplay_6 : "Kanalı bu gruba bağlamak için[{0}] kanalın **Sahibi** olmanız gerekir.\n**Kanal Sahibi:** @{1}\n\nAlternatif olarak grubunuzu o kanala bağlayabilirsiniz. ve ardından `/channelplay bağlantılı ile bağlanmayı deneyin`"
 
 #Play
-play_1 : "🔄 Sorgu İşleniyor... Lütfen Bekleyin!"
+play_1 : "✨ʟᴜ̈ᴛғᴇɴ ʙᴇᴋʟᴇʏɪɴ!"
 play_2 : "**🏷Kanal Oynatma Modu**\n🔄 Sorgu İşleniyor... Lütfen Bekleyin!\n\n**Bağlı Kanal:** {0}"
 play_3 : "Sorgu İşlenemedi!"
 play_4 : "🖇 **Yalnızca Yöneticiler Oynatır**\nYalnızca Yöneticiler ve Yetkilendirme Kullanıcıları bu grupta müzik çalabilir.\n\nModu /playmode aracılığıyla değiştirin ve zaten yöneticiyseniz, /admincache aracılığıyla admincache'i yeniden yükleyin"
@@ -245,7 +245,7 @@ queue_4 : "⏳ Sıraya eklendi **#{0}\n\n🔘Başlık:** {1}\n**⏱Süre:** {2}\
 queue_5 : "Sırada sadece bir şarkı var, tüm sırayı görmek için sıraya birkaç şarkı daha ekleyin."
 
 # All Streaming Lines
-stream_1 : "📡 **Yayın Başladı**\n\n👉**Talep Eden:** {0}\n🔦**Bilgi: **[Buradan]({1})"
+stream_1 : "✨ **ʏᴀʏɪɴ ʙᴀşʟᴀᴅɪ**\n\n✨**ʙᴀşʟɪᴋ:** {0}\n✨**ʙɪʟɢɪ: **[Buradan]({1})\n👤**ᴛᴀʟᴇᴘ ᴇᴅᴇɴ:** {3}"
 stream_2 : "📡 **URL ile Yayına Başladı **\n\n👉**şarkı adı:** {0}"
 stream_3 : "📡 **Yayın Başladı**\n\n**🔘Başlık:** {0}\n⌛️**Süre**: {1}\n👤**İsteyen:** {2}"
 stream_4 : "📡 **Akış Başlatıldı**\n\n**🔘Başlık:** [{0}]({1})\n⌛️**Süre**: {2}\n👤**İsteyen:** {3}"
@@ -253,8 +253,8 @@ stream_4 : "📡 **Akış Başlatıldı**\n\n**🔘Başlık:** [{0}]({1})\n⌛�
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "🗑 Menüyü kapat"
-CLOSEMENU_BUTTON  : "🗑 Menüyü Kapat"
+CLOSE_BUTTON  : "✨ ᴍᴇɴᴜ̈ʏᴜ̈ ᴋᴀᴘᴀᴛ ✨"
+CLOSEMENU_BUTTON  : "✨ ᴍᴇɴᴜ̈ʏᴜ̈ ᴋᴀᴘᴀᴛ ✨"
 BACK_BUTTON : "⬅ 𝐺𝐸𝑅𝐼"
 UNBAN_BUTTON : "🗑 Asistanın yasağını kaldır"
 
@@ -262,24 +262,24 @@ UNBAN_BUTTON : "🗑 Asistanın yasağını kaldır"
 L_B_1 : "🚀 Şarkı Sözlerini Şimdi Kontrol Et"
 
 # Start
-S_B_1 : "✨ 𝖸𝖺𝗋𝖽ı𝗆 𝗄𝗈𝗆𝗎𝗍𝗅𝖺𝗋"
-S_B_2 : "✨ 𝖠𝗒𝖺𝗋𝗅𝖺𝗋"
-S_B_3 : "✨ 𝖣𝖾𝗌𝗍𝖾𝗄"
-S_B_4 : "✨ 𝖣𝗎𝗒𝗎𝗋𝗎"
-S_B_5 : "✨ 𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝗎𝗇𝖺 𝖤𝗄𝗅𝖾"
-S_B_6 : "✨ 𝖪𝖺𝗒𝗇𝖺𝗄 𝖪𝗈𝖽"
-S_B_7 : "✨ 𝖪𝗎𝗋𝗎𝖼𝗎"
-S_B_8 : "✨ 𝖸𝖺𝗋𝖽ı𝗆 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋."
+S_B_1 : "✨ 𝖸𝖺𝗋𝖽ı𝗆 𝗄𝗈𝗆𝗎𝗍𝗅𝖺𝗋 ✨"
+S_B_2 : "✨ 𝖠𝗒𝖺𝗋𝗅𝖺𝗋 ✨"
+S_B_3 : "✨ 𝖣𝖾𝗌𝗍𝖾𝗄 ✨"
+S_B_4 : "✨ 𝖣𝗎𝗒𝗎𝗋𝗎 ✨"
+S_B_5 : "✨ 𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝗎𝗇𝖺 𝖤𝗄𝗅𝖾 ✨"
+S_B_6 : "✨ 𝖪𝖺𝗒𝗇𝖺𝗄 𝖪𝗈𝖽 ✨"
+S_B_7 : "✨ 𝖪𝗎𝗋𝗎𝖼𝗎 ✨"
+S_B_8 : "✨ 𝖸𝖺𝗋𝖽ı𝗆 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋 ✨"
 
 #Help 
-H_B_1 : "🔮𝖠𝖽𝗆𝗂𝗇 𝗄𝗈𝗆𝗎𝗍𝗅𝖺𝗋"
-H_B_2 : "🎧𝖮𝗒𝗇𝖺𝗍 𝗄𝗈𝗆𝗎𝗍𝗅𝖺𝗋"
-H_B_3 : "🎛️𝖡𝗈𝗍 𝗄𝗈𝗆𝗎𝗍𝗅𝖺𝗋"
-H_B_4 : "🎭𝖸𝖺𝗉𝖺𝗒 𝗓𝖾𝗄𝖺"
-H_B_5 : "𝗄𝖺𝗉𝖺𝗍"
-H_B_6 : "🦾𝖣𝗈ğ𝗋𝗎𝗅𝗎𝗄 𝖼𝖾𝗌𝖺𝗋𝖾𝗍"
-H_B_7 : "🎉𝖤ğ𝗅𝖾𝗇𝖼𝖾𝗅𝗂 𝗄𝗈𝗆𝗎𝗍𝗅𝖺𝗋"
-H_B_8 : "📢𝖤𝗍𝗂𝗄𝖾𝗍 𝗄𝗈𝗆𝗎𝗍𝗅𝖺𝗋"
+H_B_1 : "✨ ᴀᴅᴍɪɴ ᴋᴏᴍᴜᴛʟᴀʀ ✨"
+H_B_2 : "✨ ᴏʏɴᴀᴛ ᴋᴏᴍᴜᴛʟᴀʀ ✨"
+H_B_3 : "✨ ʙᴏᴛ ᴋᴏᴍᴜᴛʟᴀʀ ✨"
+H_B_4 : "✨ ʏᴀᴘᴀʏ ᴢᴇᴋᴀ ✨"
+H_B_5 : "✨ ᴋᴀᴘᴀᴛ ✨"
+H_B_6 : "✨ ᴅᴏɢ̆ʀᴜʟᴜᴋ ᴄᴇsᴀʀᴇᴛ ✨"
+H_B_7 : "✨ ᴇɢ̆ʟᴇɴᴄᴇʟɪ ᴋᴏᴍᴜᴛʟᴀʀ ✨"
+H_B_8 : "✨ ᴇᴛɪᴋᴇᴛ ᴋᴏᴍᴜᴛʟᴀʀ ✨"
 
 #PlayMode
 PM_B_1 : "Doğrudan Oynat"
@@ -294,8 +294,8 @@ P_B_4 : "🎵 Çalma Listesi Oynat"
 
 #Playlist
 PL_B_1 : "🚀 Çalma Listesi Oynat"
-PL_B_2 : "➕ Listeme ekle"
-PL_B_3 : "⚙️ Kontrol Paneli"
+PL_B_2 : "✨ ʟɪsᴛᴇᴍᴇ ᴇʟᴋᴇ ✨"
+PL_B_3 : "✨ ᴋᴏɴᴛʀᴏʟ ᴘᴀɴᴇʟɪ ✨"
 PL_B_4 : "📡 Oynatma Mo𝖽u"
 PL_B_5 : "🔄 Tüm Çalma Listesini Sil"
 PL_B_6 : "↗️ Çalma Listesini Sil"
@@ -310,7 +310,7 @@ ST_B_1 : "👨‍🎤 Ses Kalitesi"
 ST_B_2 : "🕹️ Video Kalitesi"
 ST_B_3 : "🔥 Yetkili Kullanıcılar"
 ST_B_4 : "🎙️ Kontrol Paneli"
-ST_B_6 : "🇹🇷 diller"
+ST_B_6 : "🇹🇷 ᴅɪʟʟᴇʀ"
 ST_B_5 : "♣️ Oynatma Modu"
 ST_B_7 : "🗑 Temizleme Modu"
 ST_B_8 : "{0} Düşük Kalite"
