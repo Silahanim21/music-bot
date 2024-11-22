@@ -1,64 +1,56 @@
-HELP_1 = """🙄**<u>admin komutları:</u>**
+HELP_1 = """🙄**<u>✅BURDAKİ KOMUTLARI YALNIZCA GRUP ADMİNLERİ KULLANABİLİR:</u>**
 
-Sadece komutların başına "c" ekleyin, kanalda kullanmak için.
+Burdaki Komutları Normal Üyelerin De Kullanabilmesi İçin İstediğiniz Kişinin Mesajını Yanıtlayarak /yetkilendir Yazmanız Yeterlidir.
 
-/duraklat : Şu an oynatılan yayını durdurur.
-/devam : Duraklatılmış yayını devam ettirir.
-/sessiz : Şu an oynatılan yayını sessize alır.
-/sesac : Sessize alınmış yayını seslendirir.
-/atla : Şu an oynatılan yayını atlar ve sıradaki parçayı başlatır.
-/end veya /durdur : Sırayı temizler ve mevcut yayını sonlandırır.
-/karistir : Sıradaki parçaları karıştırır.
-/ileri : Yayını belirtilen süreye atlar.
-/gerisar : Yayını belirtilen süre kadar geriye alır.
-/reboot : Sohbetiniz için botu yeniden başlatır.
+/duraklat : Müziği Duraklatır.
+/devam : Müziği Devam Ettirir.
+/atla : Çalan Müziği Atlar.
+/dur veya /son : Müziği Tamamen Durdurur.
+/karistir : Sıraya Aldığınız Parçaları Karışık Şekilde Oynatır.
+/ilerisar : Müziği İleri Sarar. (Örnek: /ilerisar 15 İle Çalan Müziği 15 Saniye İleri Alabilirsiniz.)
+/seekback : Müziği Geri Sarar. (Örnek: /seekback 15 İle Çalan Müziği 15 Saniye Geri Alabilirsiniz.)
+/restart : Botu Yeniden Başlatır.
 
-🥴<u>**oynatılan parçanın tekrarlanması :**</u>
+<u>**✅döngü modu:**</u>
 
-/tekrarla [devre dışı bırak/etkinleştir] veya [1:10 arasında]
-    : Etkinleştirildiğinde, bot mevcut oynatılan akışı döngüye alır ve 10 kez veya istenilen döngü sayısı kadar tekrar çalar.
-
-😜<u>**Yetkili Kullanıcılar :**</u>
-
-Yetkili Kullanıcılar (Auth Users), chat içinde admin hakları olmadan bot üzerinde admin yetkilerini kullanabilirler.
-
-/auth [kullanıcı_adı]: Bir kullanıcıyı botun yetkili kullanıcılar listesine ekler.
-/unauth [kullanıcı_adı]: Yetkili kullanıcılar listesinden bir kullanıcıyı kaldırır.
-/authusers: Yetkili kullanıcılar listesini gösterir.
+/tekrarla : Çalan Müziği Döngüye Alıp Tekrar Oynatır. 
+(Örnek: /tekrarla 3 İle Seste Çalan Müziği 3 Kere Daha Oynatır.)
 """
 
-HELP_2 = """💞<u>**oynatma komutları:**</u>
+HELP_2 = """<u>**✅OYNATMA KOMUTLARI:**</u>
 
-Mevcut komutlar: oynat, voynat, coynat: Şarkı çalma komutları.
+/oynat veya /play : Müziği Oynatmaya Yarar.
+-Örnek Kullanım: /oynat şarkı İsmi // Veya Oynatmak İstediğiniz Şarkıyı Yanıtlayarak /oynat Yazabilirsiniz.
+(Örnek: /oynat Neşet Ertaş Gönül Dağı)
 
-Zorla oynatma komutları:playforce, vplayforce, cplayforce: Şarkıyı zorla oynatma komutları.
+/vplay : Videoyu Seste Oynatmaya Yarar.
+-Örnek Kullanım: /vplay Video İsmi // Veya Oynatmak İstediğiniz Videoyu Yanıtlayarak /vplay Yazabilirsiniz.
 
-**c**: Kanal oynatma anlamına gelir.
-**v**: Video oynatma anlamına gelir.
-**force**: Zorla oynatma anlamına gelir.
-
-/oynat veya /voynat veya /coynat: İstenilen parçayı video sohbette yayınlamaya başlar.
-
-/playforce veya /vplayforce veya /cplayforce: Zorla oynat mevcut yayını durdurur ve istenilen parçayı yayınlamaya başlar.
-
-/channelplay [sohbet kullanıcı adı veya kimlik] veya [devre dışı bırak]: Bir kanalı bir gruba bağlar ve komutlar yardımıyla grupta parçaları yayınlamaya başlar.
+/indir [Müzik Adı] veya [Youtube Linki] : Youtubedan İndirmek İstediğiniz Şarkıyı İndirebilirsiniz.
+(Örnek: /indir Neşet Ertaş Gönül Dağı)
 
 
-🤨**<u>Sunucu Çalma Listeleri:</u>**
+**<u>✅Oynatma Listeleri:</u>**
 
-/playlist : Sunuculardaki kayıtlı çalma listenizi kontrol edin.
-/deleteplaylist : Çalma listenizdeki herhangi bir kaydedilmiş parçayı silin.
-/play : Sunucudaki kayıtlı çalma listenizden çalmaya başlar.
+/playlist : Oynatma Listenizde Hangi Müziklerin Olduğuna Bakabilirsiniz.
+/listemisil : Oynatma Listenizden Silmek İstediğiniz Müziği Seçebilirsiniz.
+/oynat Komutunu Tek Başına Kullanırsanız: Oynatma Listeleri Ekranına Ulaşırsınız.
 """
 
-HELP_3 = """😉<u>BOT KOMUTLARI:</u>
+HELP_3 = """<u>✅BOT KOMUTLARI:</u>
 
-/stats : En iyi 10 parça global istatistiklerini, botun en iyi 10 kullanıcısını, bot üzerindeki en iyi 10 sohbeti, sohbet içinde en çok çalınan 10 parçayı ve daha fazlasını alır.
-/sudolist : Müzik botunun süper kullanıcı listesini gösterir.
-/lyrics [parça adı] : İstenen parçanın sözlerini arar.
-/song [parça adı] veya [yt bağlantısı] : Herhangi bir YouTube parçasını ses veya video formatında indirir.
-/player : Etkileşimli bir oynatıcı paneli alır.
-/sıra : Kuyrukta bekleyen parçaların listesini gösterir.
+/stat : Bottaki Tüm İstatistikleri Görebilirsiniz. En Çok Müzik Oynatan Gruplar, Kullanıcılar, En Çok Oynatılan Müzikler Ve Daha Fazlası...
+
+/sudolist : Yardım İstemek İçin Bottaki Sudo Kullanıcılarına Ulaşabilirsiniz.
+
+/soz [Müzik Adı] : Sözlerine Bakmak İstediğiniz Şarkıyı Arayabilirsiniz.
+
+/indir [Müzik Adı] veya [Youtube Linki] : Youtubedan İndirmek İstediğiniz Şarkıyı İndirebilirsiniz.
+
+/vindir [Müzik Adı] veya [Youtube Linki] : Youtubedan İndirmek İstediğiniz Videoyu İndirebilirsiniz.
+(Örnek: /videoindir Neşet Ertaş Gönül Dağı)
+
+/sira : Sırada Olan Müzikler Listesini Görebilirsiniz.
 ."""
 
 HELP_4 = """😴<u>**sohbet özelliği:**</u>
