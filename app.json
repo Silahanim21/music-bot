@@ -24,7 +24,7 @@
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "7592125217:AAGpFCI9if3xNwcydqraXhMhcYR3ZWqoocE",
+        "value": "7641393283:AAErQnEQyYsJ4NHBaNtiIAVlee_fAN2KbVc",
         "required": true
       },
       "OWNER_ID": {
@@ -59,12 +59,12 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/Silahanim21/KUMSAL-MUS-C",
+        "value": "https://github.com/Silahanim21/Kumsal-Muzik-bot",
         "required": true
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "-1002422638645",
+        "value": "-1002256136144",
         "required": true
       },
       "EXTRA_PLUGINS": {
