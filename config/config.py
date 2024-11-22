@@ -120,6 +120,10 @@ GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL", "https://envs.sh/5hH.jpg"
 )
 
+YOUTUBE_IMG_URL = getenv(
+    "YOUTUBE_IMG_URL", None
+)
+
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL", "https://envs.sh/5hH.jpg"
 )
