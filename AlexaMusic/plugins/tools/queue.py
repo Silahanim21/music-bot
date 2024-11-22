@@ -120,7 +120,7 @@ async def ping_com(client, message: Message, _):
         )
     )
     basic[videoid] = True
-    mystic = await message.reply_photo(IMAGE, caption=cap, reply_markup=upl)
+    mystic = await message.reply_photo(
     if DUR != "Unknown":
         try:
             while db[chat_id][0]["vidid"] == videoid:
@@ -180,7 +180,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     buttons = queue_back_markup(_, what)
     med = InputMediaPhoto(
         media="https://envs.sh/SoF.jpg",
-        caption=_["queue_1"],
+        text=_["queue_1"],
     )
     await CallbackQuery.edit_message_media(media=med)
     j = 0
