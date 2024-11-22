@@ -178,7 +178,7 @@ async def stream(
             position = len(db.get(chat_id)) - 1
             qimg = await gen_qthumb(vidid)
             button = queue_markup(_, vidid, chat_id)
-            run = await app.send_photo(
+            run = await App.send_message(
                 original_chat_id,
                 photo=qimg,
                 caption=_["queue_4"].format(
@@ -205,10 +205,10 @@ async def stream(
                 forceplay=forceplay,
             )
             # theme = await check_theme(chat_id)
-            img = await gen_thumb(vidid)
+            img = await (vidid)
             button = stream_markup(_, vidid, chat_id)
             try:
-                run = await app.send_photo(
+                run = await App.send_message(
                     original_chat_id,
                     photo=img,
                     caption=_["stream_1"].format(
