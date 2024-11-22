@@ -42,7 +42,6 @@ from AlexaMusic.utils.decorators.language import languageCB
 from AlexaMusic.utils.formatters import seconds_to_min
 from AlexaMusic.utils.inline.play import panel_markup_1, stream_markup, telegram_markup
 from AlexaMusic.utils.stream.autoclear import auto_clean
-from AlexaMusic.utils.thumbnails import gen_thumb
 
 wrong = {}
 
@@ -228,10 +227,9 @@ async def del_back_playlist(client, CallbackQuery, _):
                 return await CallbackQuery.message.reply_text(_["call_9"])
             # theme = await check_theme(chat_id)
             button = telegram_markup(_, chat_id)
-            img = await gen_thumb(videoid)
             run = await CallbackQuery.message.reply_photo(
                 photo=img,
-                caption=_["stream_1"].format(
+                text=_["stream_1"].format(
                     user,
                     f"https://t.me/{app.username}?start=info_{videoid}",
                 ),
@@ -259,10 +257,9 @@ async def del_back_playlist(client, CallbackQuery, _):
                 return await mystic.edit_text(_["call_9"])
             # theme = await check_theme(chat_id)
             button = stream_markup(_, videoid, chat_id)
-            img = await gen_thumb(videoid)
             run = await CallbackQuery.message.reply_photo(
                 photo=img,
-                caption=_["stream_1"].format(
+                text=_["stream_1"].format(
                     title[:27],
                     f"https://t.me/{app.username}?start=info_{videoid}",
                     duration_min,
@@ -322,10 +319,9 @@ async def del_back_playlist(client, CallbackQuery, _):
             else:
                 # theme = await check_theme(chat_id)
                 button = stream_markup(_, videoid, chat_id)
-                img = await gen_thumb(videoid)
                 run = await CallbackQuery.message.reply_photo(
                     photo=img,
-                    caption=_["stream_1"].format(
+                    text=_["stream_1"].format(
                         title[:27],
                         f"https://t.me/{app.username}?start=info_{videoid}",
                         duration_min,
