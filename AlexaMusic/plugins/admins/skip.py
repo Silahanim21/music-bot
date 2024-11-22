@@ -23,7 +23,6 @@ from AlexaMusic.utils.database import get_loop
 from AlexaMusic.utils.decorators import AdminRightsCheck
 from AlexaMusic.utils.inline.play import stream_markup, telegram_markup
 from AlexaMusic.utils.stream.autoclear import auto_clean
-from AlexaMusic.utils.thumbnails import gen_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
@@ -119,10 +118,9 @@ async def skip(cli, message: Message, _, chat_id):
             return await message.reply_text(_["call_9"])
         # theme = await check_theme(chat_id)
         button = telegram_markup(_, chat_id)
-        img = await gen_thumb(videoid)
         run = await message.reply_photo(
-            photo=img,
-            caption=_["stream_1"].format(
+         photo=img,
+            text=_["stream_1"].format(
                 user,
                 f"https://t.me/{app.username}?start=info_{videoid}",
             ),
@@ -147,7 +145,6 @@ async def skip(cli, message: Message, _, chat_id):
             return await mystic.edit_text(_["call_9"])
         # theme = await check_theme(chat_id)
         button = stream_markup(_, videoid, chat_id)
-        img = await gen_thumb(videoid)
         run = await message.reply_photo(
             photo=img,
             caption=_["stream_1"].format(
@@ -208,10 +205,9 @@ async def skip(cli, message: Message, _, chat_id):
         else:
             # theme = await check_theme(chat_id)
             button = stream_markup(_, videoid, chat_id)
-            img = await gen_thumb(videoid)
             run = await message.reply_photo(
                 photo=img,
-                caption=_["stream_1"].format(
+                Text=_["stream_1"].format(
                     title[:27],
                     f"https://t.me/{app.username}?start=info_{videoid}",
                     duration_min,
