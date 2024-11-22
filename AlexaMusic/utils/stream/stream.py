@@ -174,7 +174,6 @@ async def stream(
             )
             # theme = await check_theme(chat_id)
             position = len(db.get(chat_id)) - 1
-            qimg = await gen_qthumb(vidid)
             button = queue_markup(_, vidid, chat_id)
             run = await App.send_message(
                 original_chat_id,
