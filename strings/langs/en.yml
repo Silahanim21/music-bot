@@ -238,14 +238,14 @@ song_10 : "Sunuculardan telegrama yüklenemedi."
 song_11 : "Yükleme Başladı\n\nYükleme hızı yavaş olabilir. Lütfen bekleyin.."
 
 # Tools - Queue
-queue_1 : "Lütfen Bekleyin.. Sıra Alınıyor.."
+queue_1 : "✨ ʟᴜ̈ᴛғᴇɴ ʙᴇᴋʟᴇʏɪɴ.."
 queue_2 : "Sırada Hiç Birşey Yok."
 queue_3 : "<u>**Queued Tracks:</u>**  [Checkout More Queued Tracks From Here]({0})"
-queue_4 : "⏳ Sıraya eklendi **#{0}\n\n🔘Başlık:** {1}\n**⏱Süre:** {2}\n👉**Talep Eden:** {3}"
+queue_4 : "✨ sɪʀᴀʏᴀ ᴇᴋʟᴇɴᴅɪ **#{0}\n\nʙᴀşʟɪᴋ:** {1}\n**sᴜʀᴇ:** {2}\n**ᴛᴀʟᴇᴘ ᴇᴅᴇɴ:** {3}"
 queue_5 : "Sırada sadece bir şarkı var, tüm sırayı görmek için sıraya birkaç şarkı daha ekleyin."
 
 # All Streaming Lines
-stream_1 : "✨ **ʏᴀʏɪɴ ʙᴀşʟᴀᴅɪ**\n\n✨**ʙᴀşʟɪᴋ:** {0}\n✨**ʙɪʟɢɪ: **[Buradan]({1})\n👤**ᴛᴀʟᴇᴘ ᴇᴅᴇɴ:** {3}"
+stream_1 : "✨ **ʏᴀʏɪɴ ʙᴀşʟᴀᴅɪ**\n\n**ʙᴀşʟɪᴋ:** {0}\n**ʙɪʟɢɪ: **[Buradan]({1})\n**ᴛᴀʟᴇᴘ ᴇᴅᴇɴ:** {3}"
 stream_2 : "📡 **URL ile Yayına Başladı **\n\n👉**şarkı adı:** {0}"
 stream_3 : "📡 **Yayın Başladı**\n\n**🔘Başlık:** {0}\n⌛️**Süre**: {1}\n👤**İsteyen:** {2}"
 stream_4 : "📡 **Akış Başlatıldı**\n\n**🔘Başlık:** [{0}]({1})\n⌛️**Süre**: {2}\n👤**İsteyen:** {3}"
