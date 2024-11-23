@@ -311,7 +311,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                         if str(streamtype) == "audio"
                         else TELEGRAM_VIDEO_URL
                     ),
-                    caption=_["stream_3"].format(title, check[0]["dur"], user),
+                    text=_["stream_3"].format(title, check[0]["dur"], user),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
                 db[chat_id][0]["mystic"] = run
