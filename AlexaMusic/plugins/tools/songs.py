@@ -79,7 +79,7 @@ async def song_commad_private(client, message: Message, _):
         await mystic.delete()
         return await message.reply_photo(
             thumbnail,
-            caption=_["song_4"].format(title),
+            text=_["song_4"].format(title),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
@@ -107,7 +107,7 @@ async def song_commad_private(client, message: Message, _):
     await mystic.delete()
     return await message.reply_photo(
         thumbnail,
-        caption=_["song_4"].format(title),
+        text=_["song_4"].format(title),
         reply_markup=InlineKeyboardMarkup(buttons),
     )
 
@@ -242,7 +242,7 @@ async def song_download_cb(client, CallbackQuery, _):
             width=width,
             height=height,
             thumb=thumb_image_path,
-            caption=title,
+            text=title,
             supports_streaming=True,
         )
         await mystic.edit_text(_["song_11"])
@@ -269,7 +269,7 @@ async def song_download_cb(client, CallbackQuery, _):
             return await mystic.edit_text(_["song_9"].format(e))
         med = InputMediaAudio(
             media=filename,
-            caption=title,
+            text=title,
             thumb=thumb_image_path,
             title=title,
             performer=x["uploader"],
