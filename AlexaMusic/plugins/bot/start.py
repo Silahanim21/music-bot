@@ -107,7 +107,7 @@ async def start_comm(client, message: Message, _):
                 return
             thumbnail = await YouTube.thumbnail(videoid, True)
             await m.delete()
-            await message.reply_photo(photo=thumbnail, caption=msg)
+            await message.reply_photo(photo=thumbnail, text=msg)
             return
         if name[0:3] == "sud":
             await sudoers_list(client=client, message=message, _=_)
@@ -168,7 +168,7 @@ async def start_comm(client, message: Message, _):
             await app.send_photo(
                 message.chat.id,
                 photo=thumbnail,
-                caption=searched_text,
+                text=searched_text,
                 parse_mode=enums.ParseMode.MARKDOWN,
                 reply_markup=key,
             )
@@ -190,7 +190,7 @@ async def start_comm(client, message: Message, _):
             try:
                 await message.reply_photo(
                     photo=config.START_IMG_URL,
-                    caption=_["start_2"].format(config.MUSIC_BOT_NAME),
+                    text=_["start_2"].format(config.MUSIC_BOT_NAME),
                     reply_markup=InlineKeyboardMarkup(out),
                 )
             except:
