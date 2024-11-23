@@ -21,7 +21,7 @@
     ─「 𝙝𝙚𝙧𝙤𝙠𝙪 𝙙𝙚𝙥𝙤𝙡𝙖 」─
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Silahanim21/Kumsal-Muzik-bot"> <img src="https://img.shields.io/badge/𝘽𝙐𝙍𝘼𝙔𝘼%20𝙏𝙄𝙆𝙇𝘼%20-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Silahanim21/music-bot"> <img src="https://img.shields.io/badge/𝘽𝙐𝙍𝘼𝙔𝘼%20𝙏𝙄𝙆𝙇𝘼%20-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 <h3 align="center">
     ─「 destek 」─
