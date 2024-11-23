@@ -120,7 +120,7 @@ async def ping_com(client, message: Message, _):
         )
     )
     basic[videoid] = True
-    mystic = await message.reply_photo(IMAGE, caption=cap, reply_markup=upl)
+    mystic = await message.reply_photo(IMAGE, text=cap, reply_markup=upl)
     if DUR != "Unknown":
         try:
             while db[chat_id][0]["vidid"] == videoid:
@@ -180,7 +180,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     buttons = queue_back_markup(_, what)
     med = InputMediaPhoto(
         media="https://telegra.ph//file/6f7d35131f69951c74ee5.jpg",
-        caption=_["queue_1"],
+        text=_["queue_1"],
     )
     await CallbackQuery.edit_message_media(media=med)
     j = 0
@@ -200,7 +200,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
         if "📌" in msg:
             msg = msg.replace("📌", "")
         link = await Alexabin(msg)
-        med = InputMediaPhoto(media=link, caption=_["queue_3"].format(link))
+        med = InputMediaPhoto(media=link, text=_["queue_3"].format(link))
         await CallbackQuery.edit_message_media(media=med, reply_markup=buttons)
     else:
         await asyncio.sleep(1)
@@ -271,7 +271,7 @@ async def queue_back(client, CallbackQuery: CallbackQuery, _):
     )
     basic[videoid] = True
 
-    med = InputMediaPhoto(media=IMAGE, caption=cap)
+    med = InputMediaPhoto(media=IMAGE, text=cap)
     mystic = await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     if DUR != "Unknown":
         try:
