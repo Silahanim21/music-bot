@@ -225,7 +225,7 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
             else _["gstats_6"].format(limit, MUSIC_BOT_NAME)
         )
         msg = temp + msg
-    med = InputMediaPhoto(media=config.GLOBAL_IMG_URL, caption=msg)
+    med = InputMediaPhoto(media=config.GLOBAL_IMG_URL, text=msg)
     try:
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
@@ -281,12 +281,12 @@ async def overall_stats(client, CallbackQuery, _):
 🌹 **Çalma Listesi Sınırı:** {song} ᴍɪɴᴜᴛᴇs
 🌹 **Çalma Listesi Sınırı:** {playlist_limit}
 🌹 **Çalma Listesi Oynatma Sınırı:** {fetch_playlist}"""
-    med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
+    med = InputMediaPhoto(media=config.STATS_IMG_URL, text=text)
     try:
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
         await CallbackQuery.message.reply_photo(
-            photo=config.STATS_IMG_URL, caption=text, reply_markup=upl
+            photo=config.STATS_IMG_URL, text=text, reply_markup=upl
         )
 
 
@@ -370,7 +370,7 @@ async def overall_stats(client, CallbackQuery, _):
 🌹 **Anahtarlar:** {objects}
 🌹 **ʙᴏᴛ Sorguları:** `{total_queries}`
     """
-    med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
+    med = InputMediaPhoto(media=config.STATS_IMG_URL, text=text)
     try:
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
