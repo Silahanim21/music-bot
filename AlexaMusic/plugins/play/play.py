@@ -400,8 +400,7 @@ async def play_commnd(
             )
             await mystic.delete()
             await message.reply_photo(
-                photo=img,
-                caption=cap,
+                text=cap,
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
             return await play_logs(message, streamtype=f"Playlist : {plist_type}")
@@ -419,7 +418,7 @@ async def play_commnd(
                 await mystic.delete()
                 await message.reply_photo(
                     photo=details["thumb"],
-                    caption=_["play_11"].format(
+                    text=_["play_11"].format(
                         details["title"].title(),
                         details["duration_min"],
                     ),
@@ -436,8 +435,7 @@ async def play_commnd(
                 )
                 await mystic.delete()
                 await message.reply_photo(
-                    photo=img,
-                    caption=cap,
+                    text=cap,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
                 return await play_logs(message, streamtype=f"URL Searched Inline")
@@ -643,7 +641,7 @@ async def slider_queries(client, CallbackQuery, _):
         buttons = slider_markup(_, vidid, user_id, query, query_type, cplay, fplay)
         med = InputMediaPhoto(
             media=thumbnail,
-            caption=_["play_11"].format(
+            text=_["play_11"].format(
                 title.title(),
                 duration_min,
             ),
@@ -664,7 +662,7 @@ async def slider_queries(client, CallbackQuery, _):
         buttons = slider_markup(_, vidid, user_id, query, query_type, cplay, fplay)
         med = InputMediaPhoto(
             media=thumbnail,
-            caption=_["play_11"].format(
+            text=_["play_11"].format(
                 title.title(),
                 duration_min,
             ),
