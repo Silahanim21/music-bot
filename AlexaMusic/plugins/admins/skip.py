@@ -165,7 +165,7 @@ async def skip(cli, message: Message, _, chat_id):
         button = telegram_markup(_, chat_id)
         run = await message.reply_photo(
             photo=config.STREAM_IMG_URL,
-            caption=_["stream_2"].format(user),
+            text=_["stream_2"].format(user),
             reply_markup=InlineKeyboardMarkup(button),
         )
         db[chat_id][0]["mystic"] = run
@@ -183,7 +183,7 @@ async def skip(cli, message: Message, _, chat_id):
                     if str(streamtype) == "audio"
                     else config.TELEGRAM_VIDEO_URL
                 ),
-                caption=_["stream_3"].format(title, check[0]["dur"], user),
+                text=_["stream_3"].format(title, check[0]["dur"], user),
                 reply_markup=InlineKeyboardMarkup(button),
             )
             db[chat_id][0]["mystic"] = run
@@ -196,7 +196,7 @@ async def skip(cli, message: Message, _, chat_id):
                     if str(streamtype) == "audio"
                     else config.TELEGRAM_VIDEO_URL
                 ),
-                caption=_["stream_3"].format(title, check[0]["dur"], user),
+                text=_["stream_3"].format(title, check[0]["dur"], user),
                 reply_markup=InlineKeyboardMarkup(button),
             )
             db[chat_id][0]["mystic"] = run
