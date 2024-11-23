@@ -119,8 +119,7 @@ async def stream(
                 button = stream_markup(_, vidid, chat_id)
                 run = await App.send_message (
                     original_chat_id,
-                    photo=img,
-                    caption=_["stream_1"].format(
+                    text=_["stream_1"].format(
                         title[:27],
                         f"https://t.me/{app.username}?start=info_{vidid}",
                         duration_min,
@@ -143,8 +142,7 @@ async def stream(
             upl = close_markup(_)
             return await App.send_message (
                 original_chat_id,
-                photo=carbon,
-                caption=_["playlist_18"].format(position, link),
+                text=_["playlist_18"].format(position, link),
                 reply_markup=upl,
             )
     elif streamtype == "youtube":
@@ -177,8 +175,7 @@ async def stream(
             button = queue_markup(_, vidid, chat_id)
             run = await App.send_message(
                 original_chat_id,
-                photo=qimg,
-                caption=_["queue_4"].format(
+                text=_["queue_4"].format(
                     position, title[:27], duration_min, user_name
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
@@ -206,8 +203,7 @@ async def stream(
             try:
                 run = await App.send_message(
                     original_chat_id,
-                    photo=img,
-                    caption=_["stream_1"].format(
+                    text=_["stream_1"].format(
                         title[:27],
                         f"https://t.me/{app.username}?start=info_{vidid}",
                         duration_min,
