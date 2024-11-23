@@ -65,7 +65,7 @@ async def check_playlist(client, message: Message, _):
         car = msg
     carbon = await Carbon.generate(car, randint(100, 10000000000))
     await get.delete()
-    await message.reply_photo(carbon, caption=_["playlist_15"].format(link))
+    await message.reply_photo(carbon, text=_["playlist_15"].format(link))
 
 
 @app.on_message(filters.command(DELETEPLAYLIST_COMMAND) & filters.group & ~BANNED_USERS)
